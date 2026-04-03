@@ -1,0 +1,2275 @@
+<!--
+==========================================================
+  SHREE RADHA KRISHNA MANDIR — REEVAN, UTTAR PRADESH
+  Website built for the mandir seva committee.
+==========================================================
+
+  IMAGE FILES — place all images in an "images/" folder
+  next to this HTML file. File names:
+
+  FOUNDERS:
+    sbaba.jpg         → Sadhu Baba (Late Shree Kalapnath Rai)
+    pbaba.jpg         → Pujari Baba (Late Shree Lalata Rai)
+
+  HERITAGE (Pahargarh / Reotipur):
+    Pahargarh_Fort.jpeg   → Pahargarh Fort photo
+    bhagwatimaa.jpg       → Maa Bhagwati idol, Reotipur
+    bhagwatimaa2.jpg      → Maa Bhagwati Temple, Reotipur
+
+  OLD TEMPLE (original structure):
+    old1.jpeg … old9.webp → Old mandir photos
+    old6.jpeg             → Inside darshan, old mandir
+
+  SHRINGAR / IDOL DARSHAN:
+    idol old.jpeg         → Original old idol (shringar)
+    idol.webp             → Present idol (shringar)
+
+  RENOVATION (Dec 2025 onwards):
+    ren1.png … ren5.webp  → Renovation work photos
+    r.webp                → Renovation exterior work (ren6)
+
+  NEW MANDIR (2026 final phase):
+    new0.jpg … new4.jpg   → New mandir exterior
+    new3.webp             → New mandir exterior view
+
+  JANMASHTAMI 2025:
+    janm25 (4).webp       → Janmashtami jhanki
+    janm25.webp … janm28.webp → Janmashtami darshan
+
+  LADDU GOPAL & SHRINGAR:
+    laddo.webp            → Laddu Gopal darshan
+    singh.webp            → New Singhasan photo (shown in New Mandir section)
+
+  STREET VIEW — CHHAUN-SANJARPUR ROAD:
+    map1.png              → Mandir view from Chhaun-Sanjarpur Road
+    map1 (2).png          → Road approach view
+    map3.png              → Street view approach
+    (add more as map4.png, map5.png etc.)
+==========================================================
+-->
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Radha Krishna Mandir — Reevan, Uttar Pradesh</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--saffron:#E8621A;--deep:#B84A08;--gold:#C8860A;--gold-light:#E8B84C;--gold-pale:#FFF0C0;--crimson:#7A1515;--cream:#FDF6E3;--warm:#FFFDF5;--dark:#1E0A02;--brown:#3B1A0A;--text:#2C1005;--text-light:#6B3A1F;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{
+  font-family:'Noto Serif','Noto Serif Devanagari',serif;
+  font-size:18px;
+  line-height:1.9;
+  color:#2A0820;
+}
+.en{
+  font-family:'Noto Serif',serif;
+  font-weight:500;
+}
+.hi{
+  font-family:'Noto Serif Devanagari',serif;
+  font-size:1.12em;  
+  line-height:2;      
+}
+h1,h2,h3{
+  font-weight:600;
+  letter-spacing:0.5px;
+}
+.time,
+.event-date,
+.upi-id,
+.map-static-code,
+.map-static-coords{font-family:'Inter',sans-serif;font-weight:600;}
+.stripe{height:7px;background:repeating-linear-gradient(90deg,#E06090 0,#E06090 18px,#F0C040 18px,#F0C040 36px,#F8A0C8 36px,#F8A0C8 54px,#F0C040 54px,#F0C040 72px);}
+nav{background:var(--dark);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;position:sticky;top:0;z-index:999;border-bottom:2px solid var(--gold-light);}
+.nav-brand{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1rem;padding:.9rem 0;letter-spacing:1px;white-space:nowrap;}
+.nav-links{list-style:none;display:flex;flex-wrap:wrap;}
+.nav-links a{font-size:0.95rem;font-weight:600;}
+.nav-links a{color:#ffffff;text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:.9rem .75rem;display:block;transition:color .25s;}
+.nav-links a:hover{color:var(--gold-light);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.5rem;}
+.hamburger span{width:22px;height:2px;background:var(--gold-light);display:block;}
+@media(max-width:768px){.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--dark);border-top:1px solid var(--gold);padding:.5rem 0;}.nav-links.open{display:flex;}.nav-links a{padding:.75rem 1.5rem;}.hamburger{display:flex;}}
+.hero{min-height:100vh;background:linear-gradient(175deg,#0D0400 0%,#1E0A02 35%,#120800 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 2rem 5rem;position:relative;overflow:hidden;}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(232,98,26,.08) 1px,transparent 1px);background-size:36px 36px;}
+.hero-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(232,120,30,.15) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);}
+.hero .hi{font-size:1.15em;}
+.petal{position:absolute;border-radius:50% 0 50% 0;opacity:0;animation:rise linear infinite;}
+@keyframes rise{0%{transform:translateY(105vh) rotate(0deg);opacity:0}10%{opacity:.5}90%{opacity:.4}100%{transform:translateY(-10vh) rotate(540deg);opacity:0}}
+.p1{width:7px;height:11px;left:8%;background:#E8621A;animation-duration:13s;animation-delay:0s;}
+.p2{width:6px;height:9px;left:22%;background:#F0A030;animation-duration:10s;animation-delay:2.5s;}
+.p3{width:8px;height:12px;left:38%;background:#E87020;animation-duration:15s;animation-delay:5s;}
+.p4{width:6px;height:10px;left:55%;background:#F0C040;animation-duration:11s;animation-delay:1s;}
+.p5{width:7px;height:11px;left:70%;background:#E8621A;animation-duration:14s;animation-delay:3.5s;}
+.p6{width:5px;height:8px;left:85%;background:#C8960C;animation-duration:12s;animation-delay:7s;}
+.p7{width:8px;height:12px;left:50%;background:#F08020;animation-duration:9s;animation-delay:4s;}
+.om{font-size:4.5rem;color:var(--gold-light);margin-bottom:1.2rem;animation:shimmer 4s ease-in-out infinite alternate;line-height:1;}
+@keyframes shimmer{from{text-shadow:0 0 20px rgba(240,192,64,.5),0 0 50px rgba(200,150,12,.3)}to{text-shadow:0 0 35px rgba(240,192,64,.9),0 0 80px rgba(200,150,12,.6)}}
+.hero-sanskrit{color:var(--gold-pale);font-style:italic;font-size:1.1rem;letter-spacing:3px;margin-bottom:1.2rem;opacity:.85;}
+.hero h1{font-family:'Yatra One',sans-serif;font-size:clamp(2.4rem,6vw,4.8rem);color:var(--gold-light);line-height:1.1;letter-spacing:2px;text-shadow:0 2px 30px rgba(200,150,12,.4);margin-bottom:.4rem;animation:fadeUp .9s ease both;}
+.hero h1 em{display:block;font-style:normal;font-size:.55em;color:var(--gold-pale);letter-spacing:4px;margin-top:.3rem;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero-location{color:#ffffff;font-size:1rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:2.5rem;animation:fadeUp .9s .2s ease both;}
+.hero-divider{width:180px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto 2.5rem;}
+.hero-tagline{color:#ffffff;font-size:1.25rem;font-style:italic;max-width:480px;line-height:1.8;margin-bottom:3rem;animation:fadeUp .9s .4s ease both;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;animation:fadeUp .9s .6s ease both;}
+.btn-primary{background:var(--gold);color:var(--dark);padding:.8rem 2rem;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all .3s;}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);}
+.btn-outline{border:1px solid var(--gold);color:var(--gold-light);padding:.8rem 2rem;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all .3s;}
+.btn-outline:hover{background:rgba(200,150,12,.15);}
+section{padding:5rem 2rem;}
+.section-inner{max-width:1100px;margin:0 auto;}
+.section-label{font-size:.75rem;letter-spacing:4px;text-transform:uppercase;color:var(--saffron);font-weight:700;margin-bottom:.6rem;}
+.section-title{font-family:'Yatra One',sans-serif;font-size:clamp(1.9rem,4vw,3rem);color:var(--crimson);line-height:1.2;margin-bottom:1rem;}
+.ornament-line{display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem;}
+.ornament-line::before,.ornament-line::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent);}
+.ornament-line span{color:var(--gold);font-size:1.2rem;}
+.about{background:#FFFDF5;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+@media(max-width:768px){.about-grid{grid-template-columns:1fr;gap:2rem;}}
+.about-text p{font-size:1.1rem;line-height:1.95;color:#2A0820;}
+.about-text p:first-of-type::first-letter{font-family:'Yatra One',sans-serif;font-size:3.5rem;float:left;line-height:.8;margin-right:.15em;color:var(--saffron);}
+.about-card{background:var(--cream);border-left:3px solid var(--gold);padding:1.2rem 1.5rem;margin-bottom:1.2rem;}
+.about-card h4{font-family:'Libre Baskerville',serif;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--saffron);margin-bottom:.4rem;}
+.about-card p{font-size:1rem;line-height:1.7;color:var(--text-light);}
+
+/* FOUNDERS SECTION */
+.founders{background:var(--dark);position:relative;overflow:hidden;}
+.founders::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(200,150,12,.06) 1px,transparent 1px);background-size:30px 30px;}
+.founders .section-label{color:var(--gold);}
+.founders .section-title{color:var(--gold-light);}
+.founders-intro{color:#ffffff;font-size:1.05rem;line-height:1.8;max-width:800px;margin-bottom:3rem;}
+.founders-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:4rem;}
+@media(max-width:768px){.founders-grid{grid-template-columns:1fr;gap:2rem;}}
+.founder-card{background:rgba(255,248,240,.05);border:1px solid rgba(200,150,12,.3);padding:2rem;text-align:center;}
+.founder-photo{width:180px;height:220px;object-fit:cover;object-position:top;margin:0 auto 1.2rem;display:block;border:3px solid var(--gold-light);filter:sepia(10%);}
+.founder-card h3{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.4rem;margin-bottom:.3rem;}
+.founder-title{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;}
+.founder-card p{color:#f8e8f0;font-size:.98rem;line-height:1.7;}
+.ancestor-section{margin-top:2rem;}
+.ancestor-section h3{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.5rem;margin-bottom:1.5rem;}
+.lineage-chain{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-bottom:2.5rem;}
+.lineage-chain .anc{background:rgba(255,255,255,.06);border:1px solid rgba(200,150,12,.3);padding:.6rem 1.2rem;color:var(--gold-pale);font-size:.95rem;}
+.lineage-chain .arr{color:var(--gold);font-size:1.2rem;}
+.heritage-box{background:rgba(200,150,12,.07);border:1px solid rgba(200,150,12,.25);padding:1.5rem 2rem;margin-top:2rem;}
+.heritage-box h4{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.1rem;margin-bottom:.8rem;}
+.heritage-box p{color:#f8e8f0;font-size:.97rem;line-height:1.8;}
+.heritage-box a{color:var(--gold);text-decoration:none;}
+.heritage-box a:hover{text-decoration:underline;}
+
+.timings{background:var(--cream);}
+.timings-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+@media(max-width:768px){.timings-grid{grid-template-columns:1fr;}}
+.timings-table{width:100%;border-collapse:collapse;margin-bottom:1.5rem;}
+.timings-table th{background:var(--crimson);color:#fff0f5;font-family:'Libre Baskerville',serif;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;padding:.7rem 1rem;text-align:left;}
+.timings-table td{padding:.7rem 1rem;border-bottom:1px solid rgba(200,150,12,.2);font-size:1rem;}
+.timings-table tr:nth-child(even) td{background:rgba(200,150,12,.05);}
+.time{color:var(--saffron);font-weight:600;}
+.map-wrap{border:3px solid var(--gold);overflow:hidden;}
+.map-wrap iframe{display:block;width:100%;height:320px;border:0;}
+.address-box{background:var(--dark);color:var(--cream);padding:1.2rem 1.5rem;margin-top:1rem;}
+.address-box h4{font-family:'Yatra One',sans-serif;color:var(--gold-light);margin-bottom:.5rem;font-size:1.1rem;}
+.address-box p{font-size:.95rem;line-height:1.8;color:#ffffff;}
+.address-box a{color:var(--gold-light);text-decoration:none;}
+.address-box a:hover{text-decoration:underline;}
+.events{background:linear-gradient(160deg,#200800 0%,#1A0D00 50%,#120800 100%);position:relative;}
+.events::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(200,150,12,.05) 1px,transparent 1px);background-size:28px 28px;}
+.events .section-label{color:var(--gold);}
+.events .section-title{color:var(--gold-light);}
+.events-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;}
+.event-card{background:rgba(255,255,255,.04);border:1px solid rgba(200,150,12,.25);padding:1.5rem;position:relative;overflow:hidden;transition:border-color .3s,transform .3s;}
+.event-card:hover{border-color:var(--gold-light);transform:translateY(-4px);}
+.event-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--saffron),var(--gold-light));}
+.event-date{display:inline-block;background:var(--gold);color:var(--dark);font-weight:700;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;padding:.3rem .8rem;margin-bottom:.8rem;}
+.event-card h3{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.2rem;margin-bottom:.5rem;}
+.event-card p{color:#f8e8f0;font-size:.95rem;line-height:1.6;}
+.event-tag{display:inline-block;margin-top:.8rem;font-size:.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--saffron);border:1px solid rgba(232,98,26,.4);padding:.2rem .6rem;}
+
+/* GALLERY */
+.gallery{background:#FFFDF5;}
+.gallery-intro{font-size:1.05rem;color:var(--text-light);max-width:600px;margin-bottom:2.5rem;line-height:1.8;}
+.gallery-section-label{font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--saffron);margin:2rem 0 1rem;font-weight:700;letter-spacing:3px;}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-bottom:1.5rem;}
+@media(max-width:600px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}
+.gallery-item{overflow:hidden;background:var(--brown);cursor:pointer;}
+.gallery-item.wide{grid-column:span 2;}
+.gallery-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s,filter .4s;}
+.gallery-img:hover{transform:scale(1.04);filter:brightness(1.1);}
+.gallery-item.portrait .gallery-img{object-position:top;}
+.g-fixed{aspect-ratio:4/3;}
+.g-fixed-port{aspect-ratio:3/4;}
+.g-wide{aspect-ratio:16/9;}
+
+/* GALLERY VIDEO */
+.gallery-video-wrap{margin-bottom:2.5rem;}
+.gallery-video-label{font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--saffron);margin:0 0 1rem;font-weight:700;}
+.gallery-video-card{background:var(--dark);border:3px solid var(--gold-light);overflow:hidden;position:relative;}
+.gallery-video-card video{width:100%;display:block;max-height:560px;object-fit:contain;background:#000;}
+.gallery-video-caption{background:rgba(30,10,2,.92);border-top:1px solid rgba(200,150,12,.3);padding:.8rem 1.2rem;display:flex;align-items:center;gap:.75rem;}
+.gallery-video-caption .vc-icon{font-size:1.4rem;flex-shrink:0;}
+.gallery-video-caption p{color:var(--gold-pale);font-size:.9rem;line-height:1.6;margin:0;}
+.gallery-video-caption p span.vc-tag{display:inline-block;background:var(--saffron);color:#fff;font-size:.65rem;letter-spacing:1.5px;text-transform:uppercase;padding:.15rem .55rem;margin-left:.5rem;vertical-align:middle;}
+
+/* LIGHTBOX */
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;}
+.lightbox.active{display:flex;}
+.lightbox img{max-width:90vw;max-height:90vh;object-fit:contain;border:2px solid var(--gold);}
+.lb-close{position:absolute;top:1.5rem;right:2rem;color:var(--gold-light);font-size:2.5rem;cursor:pointer;line-height:1;}
+.lb-caption{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:var(--gold-pale);font-size:.95rem;letter-spacing:2px;text-transform:uppercase;}
+
+.donate{background:var(--dark);}
+.donate .section-label{color:var(--gold);}
+.donate .section-title{color:var(--gold-light);}
+.donate-intro{color:#ffffff;font-size:1.05rem;line-height:1.8;max-width:640px;margin-bottom:3rem;}
+.donate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;}
+.donate-card{background:rgba(255,248,240,.04);border:1px solid rgba(200,150,12,.25);padding:2rem;text-align:center;transition:border-color .3s;}
+.donate-card:hover{border-color:var(--gold-light);}
+.donate-icon{font-size:2.5rem;margin-bottom:1rem;}
+.donate-card h3{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.2rem;margin-bottom:.5rem;}
+.donate-card p{color:#f8e8f0;font-size:.9rem;line-height:1.6;margin-bottom:1.2rem;}
+.upi-id{background:rgba(200,150,12,.1);border:1px solid rgba(200,150,12,.3);color:var(--gold-pale);padding:.5rem 1rem;font-size:.9rem;letter-spacing:1px;display:inline-block;margin-bottom:1rem;word-break:break-all;}
+.qr-box{width:120px;height:120px;margin:0 auto 1rem;background:white;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:#888;text-align:center;border:3px solid var(--gold);padding:.4rem;}
+.donate-note-sm{color:#f0d0e0;font-size:.8rem;font-style:italic;}
+.contact{background:var(--cream);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr;gap:2rem;}}
+.cib{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.5rem;}
+.ci{width:40px;height:40px;background:var(--crimson);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.cib h4{font-family:'Libre Baskerville',serif;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--saffron);margin-bottom:.3rem;}
+.cib p,.cib a{font-size:1.05rem;color:var(--text);text-decoration:none;line-height:1.7;}
+.cib a:hover{color:var(--saffron);}
+.cf{display:flex;flex-direction:column;gap:1rem;}
+.cf input,.cf textarea,.cf select{width:100%;padding:.8rem 1rem;border:1px solid rgba(200,150,12,.3);background:white;font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--text);outline:none;transition:border-color .3s;}
+.cf input:focus,.cf textarea:focus,.cf select:focus{border-color:var(--gold);}
+.cf textarea{height:130px;resize:vertical;}
+.cf button{background:var(--crimson);color:var(--gold-pale);padding:.9rem 2rem;border:none;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1rem;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background .3s;}
+.cf button:hover{background:var(--saffron);}
+.fn{font-size:.85rem;color:var(--text-light);font-style:italic;}
+footer{background:#0A0200;border-top:2px solid var(--gold-light);padding:3rem 2rem 1.5rem;text-align:center;}
+.fi{max-width:800px;margin:0 auto;}
+.fo{font-size:2.5rem;color:var(--gold);margin-bottom:1rem;display:block;}
+.fn2{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.3rem;margin-bottom:.3rem;}
+.fs{color:#f0d0e0;font-size:.85rem;letter-spacing:2px;margin-bottom:1.5rem;}
+.fl{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:2rem;}
+.fl a{color:#f8d8ec;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:color .25s;}
+.fl a:hover{color:var(--gold-light);}
+.fc{color:#f0d0e0;font-size:.8rem;border-top:1px solid rgba(232,150,180,.15);padding-top:1.5rem;}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* ===== REVIEWS & SOCIAL ===== */
+.reviews-social{background:linear-gradient(160deg,#1E0A02 0%,#120800 60%,#0A0200 100%);padding:5rem 2rem;position:relative;overflow:hidden;}
+.reviews-social::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(200,150,12,.05) 1px,transparent 1px);background-size:28px 28px;}
+.reviews-social .section-label{color:var(--gold);}
+.reviews-social .section-title{color:var(--gold-light);}
+.reviews-social .ornament-line::before,.reviews-social .ornament-line::after{background:linear-gradient(90deg,transparent,rgba(200,150,12,.4),transparent);}
+.social-row{text-align:center;margin-bottom:2.5rem;}
+.social-label{font-size:.72rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem;}
+.social-icons{display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap;}
+.soc-btn{display:inline-flex;align-items:center;gap:.55rem;padding:.65rem 1.4rem;border:1px solid rgba(200,150,12,.35);color:var(--gold-pale);font-size:.82rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:all .3s;position:relative;overflow:hidden;}
+.soc-btn::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .3s;}
+.soc-btn:hover{border-color:var(--gold-light);transform:translateY(-3px);color:#fff;}
+.soc-btn svg{width:18px;height:18px;flex-shrink:0;}
+.soc-insta::before{background:linear-gradient(135deg,rgba(131,58,180,.25),rgba(253,29,29,.2),rgba(252,176,69,.2));}
+.soc-insta:hover::before{opacity:1;}
+.soc-fb::before{background:rgba(24,119,242,.18);}
+.soc-fb:hover::before{opacity:1;}
+.soc-yt::before{background:rgba(255,0,0,.18);}
+.soc-yt:hover::before{opacity:1;}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem;}
+@media(max-width:900px){.reviews-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:580px){.reviews-grid{grid-template-columns:1fr;}}
+.review-card{background:rgba(255,248,240,.04);border:1px solid rgba(200,150,12,.22);padding:1.8rem 1.5rem;position:relative;transition:border-color .3s,transform .3s;}
+.review-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--saffron),var(--gold-light),var(--saffron));}
+.review-card:hover{border-color:rgba(200,150,12,.6);transform:translateY(-4px);}
+.review-stars{color:var(--gold);font-size:1rem;letter-spacing:2px;margin-bottom:.9rem;}
+.review-text{font-size:.95rem;line-height:1.8;color:#f8e8f0;font-style:italic;margin:0 0 1.3rem;quotes:none;}
+.review-author{display:flex;align-items:center;gap:.85rem;}
+.review-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-family:'Noto Serif Devanagari',serif;font-size:.85rem;font-weight:700;color:var(--dark);flex-shrink:0;border:2px solid rgba(200,150,12,.4);}
+.review-name{font-weight:600;color:var(--gold-light);font-size:.92rem;margin-bottom:.1rem;}
+.review-place{font-size:.75rem;letter-spacing:1px;color:#c0a0b0;text-transform:uppercase;}
+/* ===== /REVIEWS & SOCIAL ===== */
+
+/* HERITAGE IMAGES */
+.heritage-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 1rem;}
+@media(max-width:700px){.heritage-imgs{grid-template-columns:1fr;}}
+.heritage-img-wrap{display:flex;flex-direction:column;gap:.5rem;}
+.heritage-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border:2px solid rgba(200,150,12,.4);cursor:pointer;transition:border-color .3s,transform .3s;}
+.heritage-photo:hover{border-color:var(--gold-light);transform:scale(1.02);}
+.heritage-img-cap{font-size:.72rem;color:#f0d0e0;line-height:1.5;letter-spacing:.5px;}
+.kuldevi-note{background:rgba(232,98,26,.08);border-left:3px solid var(--gold-light);padding:1rem 1.2rem;margin-top:1rem;color:#ffffff;font-size:.93rem;line-height:1.8;}
+.kuldevi-note strong{color:var(--gold-light);}
+
+/* VERTICAL LINEAGE CHAIN */
+.lineage-chain-vert{display:flex;flex-direction:column;align-items:center;gap:0;max-width:700px;margin:0 auto 2rem;}
+.anc-row{width:100%;display:flex;justify-content:center;gap:1.5rem;}
+.anc-arrow{color:var(--gold);font-size:1.5rem;line-height:1;margin:.1rem 0;opacity:.8;}
+.anc-node{background:rgba(255,248,240,.07);border:1px solid rgba(200,150,12,.35);padding:.9rem 1.5rem;text-align:center;min-width:260px;max-width:340px;flex:1;}
+.anc-gen{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:#F0C040;margin-bottom:.3rem;opacity:1;}
+.anc-name{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.1rem;margin-bottom:.2rem;}
+.anc-sub{color:#f0d8e8;font-size:.82rem;line-height:1.5;}
+.anc-row-founders{gap:1.5rem;}
+.anc-split{color:var(--gold);font-size:1.5rem;display:flex;align-items:center;font-weight:700;}
+.anc-node-founder{border-color:rgba(200,150,12,.6);background:rgba(200,150,12,.08);}
+.anc-node-founder .anc-name{font-size:1.05rem;}
+
+.map-static-card{border:3px solid var(--gold-light);overflow:hidden;border-radius:2px;}
+.map-static-visual{width:100%;height:260px;background:linear-gradient(135deg,#fef6e4 0%,#fdecd0 50%,#fde8c0 100%);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.map-static-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(200,150,80,.2) 1px,transparent 1px),linear-gradient(90deg,rgba(200,150,80,.2) 1px,transparent 1px);background-size:28px 28px;}
+.map-static-roads{position:absolute;inset:0;background-image:linear-gradient(rgba(180,120,40,.15) 2px,transparent 2px),linear-gradient(90deg,rgba(180,120,40,.15) 2px,transparent 2px);background-size:84px 84px;}
+.map-static-center{position:relative;z-index:2;text-align:center;background:rgba(255,255,255,.95);border:2px solid var(--gold-light);padding:1.2rem 1.8rem;box-shadow:0 6px 24px rgba(180,100,20,.2);max-width:90%;}
+.map-static-pin{font-size:2.2rem;margin-bottom:.4rem;line-height:1;}
+.map-static-name{font-family:'Yatra One',sans-serif;color:var(--crimson);font-size:1.1rem;margin-bottom:.25rem;}
+.map-static-addr{font-size:.88rem;color:#3A1505;margin-bottom:.2rem;}
+.map-static-code{font-size:.75rem;color:#6B3A1F;letter-spacing:1px;margin-bottom:.15rem;}
+.map-static-coords{font-size:.72rem;color:#8B5020;letter-spacing:.5px;}
+.map-directions-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;padding:1rem 1.5rem;background:var(--crimson);color:#fff0f5;text-align:center;text-decoration:none;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1rem;letter-spacing:2px;text-transform:uppercase;transition:background .3s,letter-spacing .3s;}
+.map-directions-btn:hover{background:var(--saffron);letter-spacing:3px;}
+/* 🌐 LANGUAGE TOGGLE DEFAULT */
+.en { display: none; }
+.hi { display: inline; }
+
+/* 🌐 TOGGLE BUTTON STYLE */
+.translate-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 15px;
+  color: var(--gold-light);
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: var(--gold-light);
+  padding: 2px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.lang-btn:hover {
+  background: var(--gold-light);
+  color: #5a0015;
+}
+
+
+/* ── TRUSTEES SECTION ── */
+.trustees{background:linear-gradient(160deg,#200800 0%,#1A0D00 50%,#120800 100%);position:relative;}
+.trustees::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(200,150,12,.06) 1px,transparent 1px);background-size:30px 30px;pointer-events:none;}
+.trustees .section-label span,.trustees .section-title span{display:block;}
+.trustees .section-title{color:var(--gold-light);}
+.trustees-intro{color:#ffffff;font-size:1.05rem;line-height:1.8;max-width:820px;margin-bottom:2rem;}
+.trustees-sub-label{text-align:center;font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.15rem;letter-spacing:2px;margin-bottom:2rem;}
+.trustees-row-label{font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--saffron);font-weight:700;margin-bottom:1.2rem;}
+/* Elders — 3 col */
+.trustees-elders{grid-template-columns:repeat(3,1fr);}
+@media(max-width:768px){.trustees-elders{grid-template-columns:1fr 1fr;}}
+@media(max-width:480px){.trustees-elders{grid-template-columns:1fr;}}
+/* Sons — 3 col (3 rows of 3) */
+.trustees-sons{grid-template-columns:repeat(3,1fr);}
+@media(max-width:768px){.trustees-sons{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:480px){.trustees-sons{grid-template-columns:1fr;}}
+.trustees-grid{display:grid;gap:1.5rem;}
+.trustee-card{background:rgba(255,248,240,.05);border:1px solid rgba(200,150,12,.3);padding:1.5rem 1rem;text-align:center;transition:border-color .3s,transform .3s;}
+.trustee-card:hover{border-color:var(--gold-light);transform:translateY(-4px);}
+.trustee-card-sm{padding:1.2rem .8rem;}
+.trustee-photo-wrap{width:130px;height:150px;margin:0 auto 1rem;border:3px solid var(--gold-light);overflow:hidden;background:rgba(200,150,12,.1);}
+.trustee-photo-wrap-sm{width:100px;height:120px;}
+.trustee-photo{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
+.trustee-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:rgba(200,150,12,.4);}
+.trustee-placeholder-sm{font-size:2rem;}
+.trustee-name{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.05rem;margin-bottom:.3rem;}
+.trustee-role{font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--saffron);margin-bottom:.6rem;}
+.trustee-desc{font-size:.88rem;color:#f8e8d0;line-height:1.6;}
+/* DONORS */
+.donors-box{background:rgba(255,248,240,.04);border:1px solid rgba(200,150,12,.3);padding:2rem 2.5rem;}
+@media(max-width:600px){.donors-box{padding:1.5rem 1rem;}}
+.donors-header{font-family:'Yatra One',sans-serif;color:var(--gold-light);font-size:1.2rem;text-align:center;margin-bottom:1.8rem;padding-bottom:1rem;border-bottom:1px solid rgba(200,150,12,.25);}
+.donors-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.8rem 1.5rem;margin-bottom:1.8rem;}
+.donor-name{font-family:'Libre Baskerville',serif;font-weight:700;font-size:1.05rem;color:#ffffff;padding:.5rem 0;border-bottom:1px dotted rgba(200,150,12,.2);text-align:center;}
+.donors-footer{text-align:center;font-size:.88rem;color:#f0d8b0;font-style:italic;padding-top:1.2rem;border-top:1px solid rgba(200,150,12,.2);}
+.donors-footer a{color:var(--gold-light);text-decoration:none;}
+.donors-footer a:hover{text-decoration:underline;}
+
+.street-view-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1rem;}
+@media(max-width:600px){.street-view-grid{grid-template-columns:1fr;}}
+.street-view-card{border:2px solid var(--gold-light);overflow:hidden;background:white;}
+.sv-visual{width:100%;height:180px;background:linear-gradient(135deg,#fef3e2 0%,#fde8c8 50%,#fddcb0 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;position:relative;}
+.sv-visual-2{background:linear-gradient(135deg,#fff3e0 0%,#ffe0b0 50%,#ffd090 100%);}
+.sv-visual::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(200,130,30,.15) 1px,transparent 1px),linear-gradient(90deg,rgba(200,130,30,.15) 1px,transparent 1px);background-size:20px 20px;}
+.sv-icon{font-size:2.5rem;position:relative;z-index:1;}
+.sv-label{position:relative;z-index:1;text-align:center;font-family:'Cormorant Garamond',serif;font-size:1rem;color:#5A2A05;font-weight:600;line-height:1.5;}
+.sv-label span{font-size:.78rem;color:#8B5020;font-weight:400;}
+.sv-btn{display:block;padding:.85rem 1rem;background:var(--crimson);color:#fff0f5;text-align:center;text-decoration:none;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.88rem;letter-spacing:1.5px;text-transform:uppercase;transition:background .3s;}
+.sv-btn:hover{background:var(--saffron);}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<nav>
+  <div class="nav-brand">
+    🛕 
+    <span class="en">Shree Radha Krishna Mandir</span>
+    <span class="hi">श्री राधा कृष्ण मंदिर</span>
+  </div>
+
+  <div class="hamburger" onclick="document.getElementById('nl').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+
+  <ul class="nav-links" id="nl">
+
+    <li class="translate-box">
+      🌐 
+      <button onclick="toggleLang('hi')" class="lang-btn">हिंदी</button>
+      /
+      <button onclick="toggleLang('en')" class="lang-btn">EN</button>
+
+    </li>
+
+    <li>
+      <a href="#about" onclick="document.getElementById('nl').classList.remove('open')">
+        <span class="en">About</span>
+        <span class="hi">परिचय</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#founders" onclick="document.getElementById('nl').classList.remove('open')">
+        <span class="en">Founders</span>
+        <span class="hi">संस्थापक</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#timings" onclick="document.getElementById('nl').classList.remove('open')">
+        <span class="en">Timings</span>
+        <span class="hi">समय</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#events" onclick="document.getElementById('nl').classList.remove('open')">
+        <span class="en">Events</span>
+        <span class="hi">उत्सव</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#gallery" onclick="document.getElementById('nl').classList.remove('open')">
+        <span class="en">Gallery</span>
+        <span class="hi">चित्र</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#donate" onclick="document.getElementById('nl').classList.remove('open')">
+        <span class="en">Donate</span>
+        <span class="hi">दान</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#trustees" onclick="document.getElementById('nl').classList.remove('open')">
+        <span class="en">Trustees</span>
+        <span class="hi">ट्रस्टी</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#contact" onclick="document.getElementById('nl').classList.remove('open')">
+        <span class="en">Contact</span>
+        <span class="hi">संपर्क</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
+<section class="hero" id="home">
+  <div class="hero-dots"></div><div class="hero-glow"></div>
+  <div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div>
+  <div class="petal p4"></div><div class="petal p5"></div><div class="petal p6"></div><div class="petal p7"></div>
+  <div class="om">ॐ</div>
+  <div class="hero-sanskrit">राधे राधे — Radhe Radhe</div>
+  <h1>
+  	<span class="en">Shree Radha Krishna Mandir</span>
+  	<span class="hi">श्री राधा कृष्ण मंदिर</span>
+
+  	<em>
+    	  <span class="en">Reevan (Babhangaon), Uttar Pradesh</span>
+    	  <span class="hi">रीवां (बभनगाँव), उत्तर प्रदेश</span>
+        </em>
+  </h1>
+  <div class="hero-location">
+  	<span class="en">Est. 1960 — Serving devotees with love & devotion</span>
+  	<span class="hi">स्थापना: 1960 — श्रद्धा और सेवा का केंद्र</span>
+  </div>
+  <div class="hero-divider"></div>
+  <p class="hero-tagline">
+  	<span class="en">"Where devotion fills the air with the fragrance of flowers and divine names."</span>
+  	<span class="hi">"जहाँ भक्ति की सुगंध और दिव्य नामों की ध्वनि वातावरण को पवित्र बनाती है।"</span>
+  </p>
+  <div class="hero-btns">
+    <a class="btn-primary" href="#timings">
+    	<span class="en">Darshan Timings</span>
+    	<span class="hi">दर्शन समय</span>
+    </a>
+
+   <a class="btn-outline" href="#events">
+     <span class="en">Upcoming Events</span>
+     <span class="hi">आगामी कार्यक्रम</span>
+   </a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-inner">
+    <p class="section-label reveal">
+  <span class="en">Our Sacred Heritage</span>
+  <span class="hi">हमारी पवित्र विरासत</span>
+</p>
+    <h2 class="section-title reveal">
+  <span class="en">History & Significance</span>
+  <span class="hi">इतिहास एवं महत्व</span>
+</h2>
+<div class="ornament-line reveal"><span>✦</span></div>
+
+<div class="about-grid">
+  <div class="about-text reveal">
+
+    <p>
+      <span class="en">
+        Shree Radha Krishna Mandir in Reevan (locally known as Babhangaon), Uttar Pradesh, stands as a timeless sanctuary of devotion, where the divine love of Radha and Krishna has been worshipped since 1960. Founded by the late Shree Kalapnath Rai — revered by all as <em>Sadhu Baba</em> — this mandir has served as the spiritual heart of the village for over six decades.
+      </span>
+      <span class="hi">
+        उत्तर प्रदेश के रीवां (बभनगाँव) में स्थित श्री राधा कृष्ण मंदिर एक पवित्र आध्यात्मिक स्थल है, जहाँ 1960 से राधा और कृष्ण की दिव्य प्रेम भावना की पूजा निरंतर की जा रही है। इस मंदिर की स्थापना स्वर्गीय श्री कल्पनाथ राय जी द्वारा की गई थी, जिन्हें श्रद्धापूर्वक <em>साधु बाबा</em> कहा जाता है। यह मंदिर पिछले छह दशकों से गाँव का आध्यात्मिक केंद्र रहा है।
+      </span>
+    </p>
+
+    <p>
+      <span class="en">
+        The mandir enshrines the beautiful idols of Shri Radha Rani and Shri Krishna, adorned with seasonal garments and flowers in accordance with the Vaishnava tradition. Daily aartis are performed morning and evening. Grand celebrations during Janmashtami and Radhashtami draw devotees from across the region.
+      </span>
+      <span class="hi">
+        इस मंदिर में श्री राधा रानी और श्री कृष्ण की सुंदर मूर्तियाँ स्थापित हैं, जिन्हें वैष्णव परंपरा के अनुसार विभिन्न ऋतुओं के वस्त्रों और फूलों से सजाया जाता है। यहाँ प्रतिदिन प्रातः और सायं आरती होती है। जन्माष्टमी और राधाष्टमी के अवसर पर भव्य उत्सव आयोजित किए जाते हैं, जिनमें दूर-दूर से भक्त आते हैं।
+      </span>
+    </p>
+
+    <p>
+      <span class="en">
+        Since December 2025, the mandir has undergone a complete renovation and redevelopment — a new shikhara-topped structure now rises proudly, and the sacred singhasan for Shri Radha Krishna has been beautifully renovated in pristine white marble. The temple is now in its final phase of renovation and will soon open in its new form for all devotees.
+      </span>
+      <span class="hi">
+        दिसंबर 2025 से मंदिर का पूर्ण पुनर्निर्माण और विकास कार्य चल रहा है। अब एक नया भव्य शिखरयुक्त मंदिर निर्मित हो चुका है, तथा श्री राधा कृष्ण के लिए पवित्र सिंहासन को सुंदर सफेद संगमरमर से सजाया गया है। मंदिर अब अपने अंतिम चरण में है और शीघ्र ही सभी भक्तों के लिए अपने नए रूप में खुलने वाला है।
+      </span>
+    </p>
+
+  </div>
+
+  <div class="reveal">
+
+    <div class="about-card">
+      <h4>
+        <span class="en">Presiding Deity</span>
+        <span class="hi">आराध्य देव</span>
+      </h4>
+      <p>
+        <span class="en">
+          Shri Radha Rani &amp; Shri Krishna — the eternal divine couple, symbolising pure love and devotion. Laddu Gopal is also installed as the child form of the Lord.
+        </span>
+        <span class="hi">
+          श्री राधा रानी और श्री कृष्ण — दिव्य प्रेम और भक्ति के प्रतीक। लड्डू गोपाल जी भी बाल रूप में विराजमान हैं।
+        </span>
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h4>
+        <span class="en">Tradition &amp; Community</span>
+        <span class="hi">परंपरा एवं समुदाय</span>
+      </h4>
+      <p>
+        <span class="en">
+          Follows the Vaishnava tradition with daily puja and seasonal Shringar. Established by the Bhumihar Brahmin family of Sakarwar (Sanskrit) gotra.
+        </span>
+        <span class="hi">
+          यह मंदिर वैष्णव परंपरा का पालन करता है, जहाँ प्रतिदिन पूजा और मौसमी श्रृंगार किया जाता है। इसकी स्थापना सकरवार (संस्कृत) गोत्र के भूमिहार ब्राह्मण परिवार द्वारा की गई थी।
+        </span>
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h4>
+        <span class="en">Open to All Devotees</span>
+        <span class="hi">सभी भक्तों के लिए खुला</span>
+      </h4>
+      <p>
+        <span class="en">
+          Situated in Reevan (Babhangaon) village, Uttar Pradesh — PIN 276302. Open to all devotees regardless of caste, creed, or origin.
+        </span>
+        <span class="hi">
+          उत्तर प्रदेश के रीवां (बभनगाँव) गाँव में स्थित — पिन 276302। यह मंदिर सभी भक्तों के लिए खुला है, चाहे उनका धर्म, जाति या पृष्ठभूमि कोई भी हो।
+        </span>
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h4>
+        <span class="en">Renovation 2025–26</span>
+        <span class="hi">पुनर्निर्माण 2025–26</span>
+      </h4>
+      <p>
+        <span class="en">
+          A complete redevelopment of the mandir premises has been underway since December 2025 and is in its final phase, with a beautiful new shikhara and renovated garbhagriha.
+        </span>
+        <span class="hi">
+          दिसंबर 2025 से मंदिर परिसर का पूर्ण पुनर्निर्माण कार्य चल रहा है और अब अंतिम चरण में है, जिसमें नया शिखर और सुंदर गर्भगृह तैयार किया गया है।
+        </span>
+      </p>
+    </div>
+
+  </div>
+</div>
+</div>
+</section>
+
+<!-- FOUNDERS SECTION -->
+<section class="founders" id="founders">
+  <div class="section-inner">
+
+    <p class="section-label reveal">
+      <span class="en">Sthapana &amp; Seva</span>
+      <span class="hi">स्थापना एवं सेवा</span>
+    </p>
+
+    <h2 class="section-title reveal">
+      <span class="en">Founders of the Mandir</span>
+      <span class="hi">मंदिर के संस्थापक</span>
+    </h2>
+
+    <div class="ornament-line reveal"><span>✦</span></div>
+
+    <p class="founders-intro reveal">
+      <span class="en">
+        This mandir was established through the profound devotion and lifelong sacrifice of two brothers — Sadhu Baba and Pujari Baba — who dedicated their entire lives to the seva of Shri Radha Krishna in Reevan.
+      </span>
+      <span class="hi">
+        इस मंदिर की स्थापना दो महान भाइयों — साधु बाबा और पुजारी बाबा — की गहरी भक्ति और आजीवन त्याग का परिणाम है, जिन्होंने अपना पूरा जीवन रीवां में श्री राधा कृष्ण की सेवा में समर्पित कर दिया।
+      </span>
+    </p>
+
+    <div class="founders-grid reveal">
+      <div class="founder-card">
+        <img src="images/sbaba.jpg" alt="Late Shree Kalapnath Rai — Sadhu Baba" class="founder-photo">
+        <h3>
+  <span class="en">Late Shree Kalapnath Rai</span>
+  <span class="hi">स्वर्गीय श्री कल्पनाथ राय</span>
+</h3>
+
+<div class="founder-title">
+  <span class="en">Sadhu Baba — Founder of the Mandir</span>
+  <span class="hi">साधु बाबा — मंदिर के संस्थापक</span>
+</div>
+
+<p>
+  <span class="en">
+    Sadhu Baba constructed this mandir in <strong>1960</strong> and consecrated the idols of Shri Radha Krishna. He served as an officer in MTNL (Government of India) and upon retirement, returned permanently to Reevan to live beside his brother in the baithka adjoining the mandir. A man of deep renunciation and faith, he was known throughout the region for his simple, saintly way of life.
+  </span>
+  <span class="hi">
+    साधु बाबा ने इस मंदिर का निर्माण <strong>1960</strong> में कराया और श्री राधा कृष्ण की मूर्तियों की स्थापना की। वे एमटीएनएल (भारत सरकार) में अधिकारी थे और सेवानिवृत्ति के बाद स्थायी रूप से रीवां लौट आए, जहाँ वे अपने भाई के साथ मंदिर के पास स्थित बैठक में रहने लगे। गहरे त्याग और आस्था के प्रतीक, वे अपने सरल और संतस्वरूप जीवन के लिए पूरे क्षेत्र में प्रसिद्ध थे।
+  </span>
+</p>
+
+</div>
+
+<div class="founder-card">
+        <img src="images/pbaba.jpg" alt="Late Shree Lalata Rai — Pujari Baba" class="founder-photo">
+       <h3>
+  <span class="en">Late Shree Lalata Rai</span>
+  <span class="hi">स्वर्गीय श्री ललता राय</span>
+</h3>
+
+<div class="founder-title">
+  <span class="en">Pujari Baba — First Sevak &amp; Pujari</span>
+  <span class="hi">पुजारी बाबा — प्रथम सेवक एवं पुजारी</span>
+</div>
+
+<p>
+  <span class="en">
+    Pujari Baba was the elder brother and the first and lifelong sevak of this mandir. A two-room baithka (living space) was built for him in <strong>1972</strong> beside the temple. He lived here from the day of the mandir's construction, performing daily puja and aarti without interruption until his last breath. His entire life was an offering at the feet of Shri Radha Krishna.
+  </span>
+  <span class="hi">
+    पुजारी बाबा बड़े भाई थे और इस मंदिर के प्रथम तथा आजीवन सेवक रहे। उनके लिए <strong>1972</strong> में मंदिर के पास दो कमरों की एक बैठक (निवास स्थान) बनाई गई थी। उन्होंने मंदिर के निर्माण के दिन से ही यहाँ निवास किया और अपने अंतिम समय तक प्रतिदिन पूजा और आरती निरंतर करते रहे। उनका संपूर्ण जीवन श्री राधा कृष्ण के चरणों में समर्पित था।
+  </span>
+</p>
+
+</div>
+</div>
+
+<div class="ancestor-section reveal">
+
+<h3>
+  <span class="en">Family Lineage — Vanshavali</span>
+  <span class="hi">वंशावली — पारिवारिक परंपरा</span>
+</h3>
+
+<p style="color:#b8956a;font-size:.97rem;line-height:1.8;margin-bottom:1.5rem;">
+  <span class="en">
+    The founding brothers belong to the <strong style="color:var(--gold-light)">Bhumihar Brahmin community of Sakarwar (Sanskrit) gotra</strong>. Their known lineage going back through Reevan and Reotipur is as follows:
+  </span>
+  <span class="hi">
+    संस्थापक भाई <strong style="color:var(--gold-light)">सकरवार (संस्कृत) गोत्र के भूमिहार ब्राह्मण समुदाय</strong> से संबंधित हैं। उनकी ज्ञात वंशावली, जो रीवां और रेवतीपुर से जुड़ी है, इस प्रकार है:
+  </span>
+</p>
+
+<div class="lineage-chain-vert">
+
+<div class="anc-row">
+  <div class="anc-node">
+    <div class="anc-gen">१ली पीढ़ी — 1st Generation</div>
+    <div class="anc-name">
+      <span class="en">Late Shree Chetanand Rai</span>
+      <span class="hi">स्वर्गीय श्री चेतनानंद राय</span>
+    </div>
+    <div class="anc-sub">
+      <span class="en">Great-great-grandfather · Reotipur, Ghazipur</span>
+      <span class="hi">परदादा · रेवतीपुर, गाज़ीपुर</span>
+    </div>
+  </div>
+</div>
+
+<div class="anc-arrow">↓</div>
+
+<div class="anc-row">
+  <div class="anc-node">
+    <div class="anc-gen">२री पीढ़ी — 2nd Generation</div>
+    <div class="anc-name">
+      <span class="en">Late Shree Devi Rai</span>
+      <span class="hi">स्वर्गीय श्री देवी राय</span>
+    </div>
+    <div class="anc-sub">
+      <span class="en">Great-grandfather · Migrated from Reotipur to Reevan c. 1840–1850</span>
+      <span class="hi">परदादा · लगभग 1840–1850 में रेवतीपुर से रीवां आए</span>
+    </div>
+  </div>
+</div>
+
+<div class="anc-arrow">↓</div>
+
+<div class="anc-row">
+  <div class="anc-node">
+    <div class="anc-gen">३री पीढ़ी — 3rd Generation</div>
+    <div class="anc-name">
+      <span class="en">Late Shree Ramagya Rai</span>
+      <span class="hi">स्वर्गीय श्री रामाज्ञा राय</span>
+    </div>
+    <div class="anc-sub">
+      <span class="en">Grandfather · Reevan (Babhangaon)</span>
+      <span class="hi">दादा · रीवां (बभनगाँव)</span>
+    </div>
+  </div>
+</div>
+
+<div class="anc-arrow">↓</div>
+
+<div class="anc-row">
+  <div class="anc-node">
+    <div class="anc-gen">४वीं पीढ़ी — 4th Generation</div>
+    <div class="anc-name">
+      <span class="en">Late Shree Laxmi Rai</span>
+      <span class="hi">स्वर्गीय श्री लक्ष्मी राय</span>
+    </div>
+    <div class="anc-sub">
+      <span class="en">Father · Reevan (Babhangaon)</span>
+      <span class="hi">पिता · रीवां (बभनगाँव)</span>
+    </div>
+  </div>
+</div>
+
+<div class="anc-arrow">↓</div>
+
+<div class="anc-row anc-row-founders">
+
+  <div class="anc-node anc-node-founder">
+    <div class="anc-gen">५वीं पीढ़ी — 5th Generation</div>
+    <div class="anc-name">
+      <span class="en">Late Shree Lalata Rai</span>
+      <span class="hi">स्वर्गीय श्री ललता राय</span>
+    </div>
+    <div class="anc-sub">
+      <span class="en">Pujari Baba — Elder Brother<br>First Sevak of the Mandir</span>
+      <span class="hi">पुजारी बाबा — बड़े भाई<br>मंदिर के प्रथम सेवक</span>
+    </div>
+  </div>
+
+  <div class="anc-split">&amp;</div>
+
+  <div class="anc-node anc-node-founder">
+    <div class="anc-gen">५वीं पीढ़ी — 5th Generation</div>
+    <div class="anc-name">
+      <span class="en">Late Shree Kalapnath Rai</span>
+      <span class="hi">स्वर्गीय श्री कल्पनाथ राय</span>
+    </div>
+    <div class="anc-sub">
+      <span class="en">Sadhu Baba — Younger Brother<br>Founder of the Mandir (1960)</span>
+      <span class="hi">साधु बाबा — छोटे भाई<br>मंदिर के संस्थापक (1960)</span>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<div class="heritage-box">
+
+  <h4>
+    <span class="en">🏰 Ancient Heritage — Reotipur &amp; Maharaja Kam Dev Mishra</span>
+    <span class="hi">🏰 प्राचीन विरासत — रेवतीपुर एवं महाराजा कम देव मिश्र</span>
+  </h4>
+
+  <p>
+    <span class="en">
+      The founding family traces its roots to <strong>Reotipur</strong> (Ghazipur, U.P.) — considered one of the largest villages of Asia — which was settled by the descendants of <strong>Maharaja Kam Dev Mishra (<span class="num">1438–1532</span> CE)</strong>, a Sakarwar Bhumihar king of Sanskrit gotra who ruled the Pahargarh Estate (comprising present-day Morena, Gwalior, Jhansi and Shivpuri). He was an ally of <strong>Rana Sanga</strong> and fought alongside him against Babur. After the defeat at the Battle of Khanwa (<span class="num">1527</span>), Maharaja Kam Dev eventually settled at what is today known as Reotipur in Ghazipur — founding a great community of Sakarwar Bhumihar and Rajput families tracing their lineage to Vijaypur Sikri (Fatehpur Sikri), Pratapgarh and Kanpur.
+    </span>
+
+    <span class="hi">
+      संस्थापक परिवार की जड़ें <strong>रेवतीपुर</strong> (गाजीपुर, उत्तर प्रदेश) से जुड़ी हैं — जिसे एशिया के सबसे बड़े गांवों में से एक माना जाता है। यह स्थान <strong>महाराजा कम देव मिश्र (<span class="num">1438–1532</span> ई.)</strong> के वंशजों द्वारा बसाया गया था, जो संस्कृत गोत्र के सकरवार भूमिहार राजा थे और पहाड़गढ़ राज्य (जिसमें वर्तमान मुरैना, ग्वालियर, झांसी और शिवपुरी शामिल हैं) पर शासन करते थे। वे <strong>राणा सांगा</strong> के सहयोगी थे और बाबर के विरुद्ध उनके साथ युद्ध में लड़े। खानवा के युद्ध (<span class="num">1527</span>) में पराजय के बाद, महाराजा कम देव अंततः गाजीपुर के रेवतीपुर में आकर बस गए — जहाँ उन्होंने सकरवार भूमिहार और राजपूत परिवारों के एक बड़े समुदाय की स्थापना की, जिनकी वंशावली विजयपुर सीकरी (फतेहपुर सीकरी), प्रतापगढ़ और कानपुर से जुड़ी है।
+    </span>
+  </p>
+
+  <p style="margin-top:.8rem;">
+    <span class="en">
+      It was from this ancient root that the ancestors of the founding brothers — with Late Shree Devi Rai likely being among the earliest — migrated from Reotipur and settled in Reevan (Babhangaon) around <strong><span class="num">1840–1850</span></strong>, eventually giving rise to this mandir in <span class="num">1960</span>.
+    </span>
+
+    <span class="hi">
+      इसी प्राचीन वंश से संस्थापक भाइयों के पूर्वज — जिनमें स्वर्गीय श्री देवी राय संभवतः प्रारंभिक लोगों में से थे — रेवतीपुर से प्रवास करके लगभग <strong><span class="num">1840–1850</span></strong> के बीच रीवां (बभनगाँव) में आकर बसे, जिससे आगे चलकर <span class="num">1960</span> में इस मंदिर की स्थापना हुई।
+    </span>
+  </p>
+
+  <div class="heritage-imgs">
+    <div class="heritage-img-wrap">
+            <img src="images/Pahargarh_Fort.jpeg" alt="Pahargarh Fort — seat of Maharaja Kam Dev Mishra" class="heritage-photo" onclick="openLB(this.src,'Pahargarh Fort — Seat of Power of Maharaja Kam Dev Mishra')">
+           <div class="heritage-img-cap">
+  <span class="en">
+    Pahargarh Fort, Morena — Seat of the Pahargarh Estate ruled by Maharaja Kam Dev Mishra
+  </span>
+  <span class="hi">
+    पहाड़गढ़ किला, मुरैना — महाराजा काम देव मिश्र द्वारा शासित पहाड़गढ़ रियासत का मुख्य केंद्र
+  </span>
+</div>
+</div>
+
+<div class="heritage-img-wrap">
+            <img src="images/bhagwatimaa2.jpg" alt="Maa Bhagwati Temple, Reotipur, Ghazipur" class="heritage-photo" onclick="openLB(this.src,'Maa Bhagwati Temple, Reotipur, Ghazipur — Kuldevi of the Sakarwar Clan')">
+            <div class="heritage-img-cap">
+  <span class="en">
+    Maa Bhagwati Temple, Reotipur, Ghazipur — Kuldevi Mandir of the Sakarwar clan, established by Maharaja Kam Dev Mishra
+  </span>
+  <span class="hi">
+    माँ भगवती मंदिर, रेवतीपुर, गाज़ीपुर — सकरवार वंश की कुलदेवी का मंदिर, जिसकी स्थापना महाराजा काम देव मिश्र द्वारा की गई
+  </span>
+</div>
+</div>
+
+<div class="heritage-img-wrap">
+            <img src="images/bhagwatimaa.jpg" alt="Maa Bhagwati — Kuldevi Darshan, Reotipur" class="heritage-photo" onclick="openLB(this.src,'Maa Bhagwati — Kuldevi Darshan, Reotipur, Ghazipur')">
+       <div class="heritage-img-cap">
+  <span class="en">
+    Maa Bhagwati — the Kuldevi whose idol Maharaja Kam Dev Mishra carried from the Battle of Khanwa and enshrined at Reotipur
+  </span>
+  <span class="hi">
+    माँ भगवती — वह कुलदेवी जिनकी मूर्ति महाराजा काम देव मिश्र खानवा के युद्ध से अपने साथ लाए और रेवतीपुर में स्थापित की
+  </span>
+</div>
+</div>
+</div>
+
+<div class="kuldevi-note">
+  <strong>
+    <span class="en">🙏 Maa Bhagwati — The Kuldevi of the Sakarwar Clan:</span>
+    <span class="hi">🙏 माँ भगवती — सकरवार वंश की कुलदेवी:</span>
+  </strong>
+
+  <span class="en">
+    When Maharaja Kam Dev Mishra withdrew after the Battle of Khanwa against Babur, he carried with him the sacred idol of Mata Khamakhya (Maa Bhagwati) — the clan deity of the Sakarwar Bhumihar family. He enshrined this idol at Reotipur, Ghazipur, where the Maa Bhagwati temple stands to this day as the ancestral Kuldevi Mandir of this community. The founding brothers of this Reevan mandir are descendants of this very lineage.
+  </span>
+
+  <span class="hi">
+    जब महाराजा काम देव मिश्र खानवा के युद्ध में बाबर के विरुद्ध संघर्ष के बाद पीछे हटे, तब वे अपने साथ माता कामाख्या (माँ भगवती) की पवित्र मूर्ति लेकर आए, जो सकरवार भूमिहार परिवार की कुलदेवी हैं। उन्होंने इस मूर्ति को गाज़ीपुर के रेवतीपुर में स्थापित किया, जहाँ आज भी माँ भगवती का मंदिर इस समुदाय की कुलदेवी के रूप में स्थित है। रीवां के इस मंदिर के संस्थापक भाई इसी वंश के वंशज हैं।
+  </span>
+</div>
+
+<p style="margin-top:1rem;font-size:.88rem;opacity:.75;">
+  <a href="https://en.wikipedia.org/wiki/Maharaja_Kam_Dev_Mishra" target="_blank">
+    <span class="en">📖 Read more about Maharaja Kam Dev Mishra on Wikipedia →</span>
+    <span class="hi">📖 महाराजा काम देव मिश्र के बारे में और पढ़ें (विकिपीडिया) →</span>
+  </a>
+</p>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="timings" id="timings">
+  <div class="section-inner">
+
+    <p class="section-label reveal">
+      <span class="en">Darshan &amp; Pooja</span>
+      <span class="hi">दर्शन एवं पूजा</span>
+    </p>
+
+    <h2 class="section-title reveal">
+      <span class="en">Timings &amp; Location</span>
+      <span class="hi">समय एवं स्थान</span>
+    </h2>
+
+    <div class="ornament-line reveal"><span>✦</span></div>
+
+    <div class="timings-grid">
+
+      <div class="reveal">
+
+        <table class="timings-table">
+          <thead>
+            <tr>
+              <th>
+                <span class="en">Darshan / Visit</span>
+                <span class="hi">दर्शन</span>
+              </th>
+              <th>
+                <span class="en">Time</span>
+                <span class="hi">समय</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="en">Morning Darshan</span>
+                <span class="hi">प्रातः दर्शन</span>
+              </td>
+              <td class="time">9:00 AM – 12:00 PM</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="en">Evening Darshan</span>
+                <span class="hi">सायं दर्शन</span>
+              </td>
+              <td class="time">4:00 PM – 8:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="timings-table">
+          <thead>
+            <tr>
+              <th>
+                <span class="en">Aarti</span>
+                <span class="hi">आरती</span>
+              </th>
+              <th>
+                <span class="en">Time</span>
+                <span class="hi">समय</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="en">Morning Aarti</span>
+                <span class="hi">प्रातः आरती</span>
+              </td>
+              <td class="time">
+                <span class="en">Morning Hours</span>
+                <span class="hi">प्रातः समय</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="en">Sandhya Aarti</span>
+                <span class="hi">सायं आरती</span>
+              </td>
+              <td class="time">
+                <span class="en">Evening Hours</span>
+                <span class="hi">सायं समय</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="timings-table">
+          <thead>
+            <tr>
+              <th>
+                <span class="en">Day</span>
+                <span class="hi">दिन</span>
+              </th>
+              <th>
+                <span class="en">Open</span>
+                <span class="hi">खुला</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="en">Monday – Sunday</span>
+                <span class="hi">सोमवार – रविवार</span>
+              </td>
+              <td class="time">9 AM–12 PM &amp; 4–8 PM</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="en">All Days</span>
+                <span class="hi">प्रतिदिन</span>
+              </td>
+              <td class="time">
+                <span class="en">Including Festivals &amp; Ekadashi</span>
+                <span class="hi">त्योहार एवं एकादशी सहित</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style="font-size:.9rem;color:var(--text-light);margin-top:.5rem;font-style:italic;">
+          <span class="en">
+            🙏 Aarti is performed twice daily — morning and evening. All devotees are warmly welcome.
+          </span>
+          <span class="hi">
+            🙏 प्रतिदिन प्रातः एवं सायं आरती होती है। सभी भक्तों का हार्दिक स्वागत है।
+          </span>
+        </p>
+
+      </div>
+
+      <div class="reveal">
+
+        <div class="map-static-card">
+          <div class="map-static-visual">
+            <div class="map-static-grid"></div>
+            <div class="map-static-roads"></div>
+
+            <div class="map-static-center">
+              <div class="map-static-pin">📍</div>
+
+              <div class="map-static-info">
+
+                <div class="map-static-name">
+                  <span class="en">Shree Radha Krishna Mandir</span>
+                  <span class="hi">श्री राधा कृष्ण मंदिर</span>
+                </div>
+
+                <div class="map-static-addr">
+                  <span class="en">Reevan (Babhangaon), Uttar Pradesh</span>
+                  <span class="hi">रीवां (बभनगाँव), उत्तर प्रदेश</span>
+                </div>
+
+                <div class="map-static-code">
+                  Plus Code: XXM6+FX4 · PIN 276302
+                </div>
+
+                <div class="map-static-coords">
+                  25.9836°N, 82.9625°E
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <a href="https://maps.app.goo.gl/Uc5WwGC8RQSxTYyY7" target="_blank" class="map-directions-btn">
+            <span class="en">🗺️ Open in Google Maps &amp; Get Directions →</span>
+            <span class="hi">🗺️ गूगल मैप में खोलें एवं मार्ग देखें →</span>
+          </a>
+        </div>
+
+        <div class="address-box">
+
+          <h4>
+            <span class="en">📍 How to Reach</span>
+            <span class="hi">📍 कैसे पहुँचे</span>
+          </h4>
+
+          <p>
+            <span class="en">
+              Shree Radha Krishna Mandir<br>
+              Reevan (Babhangaon), Uttar Pradesh<br>
+              PIN: <strong>276302</strong><br>
+              Plus Code: <strong>XXM6+FX4</strong>
+            </span>
+
+            <span class="hi">
+              श्री राधा कृष्ण मंदिर<br>
+              रीवां (बभनगाँव), उत्तर प्रदेश<br>
+              पिन: <strong>276302</strong><br>
+              प्लस कोड: <strong>XXM6+FX4</strong>
+            </span>
+
+            <br><br>
+
+            <a href="https://maps.app.goo.gl/Uc5WwGC8RQSxTYyY7" target="_blank">
+              <span class="en">📌 Open in Google Maps →</span>
+              <span class="hi">📌 गूगल मैप में खोलें →</span>
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="events" id="events">
+  <div class="section-inner">
+
+    <p class="section-label reveal">
+      <span class="en">Utsav &amp; Parv</span>
+      <span class="hi">उत्सव एवं पर्व</span>
+    </p>
+
+    <h2 class="section-title reveal">
+      <span class="en">Events &amp; Festivals</span>
+      <span class="hi">कार्यक्रम एवं उत्सव</span>
+    </h2>
+
+    <div class="ornament-line reveal"><span>✦</span></div>
+
+    <div class="events-grid">
+
+      <div class="event-card reveal">
+        <div class="event-date">
+          <span class="en">March 2026</span>
+          <span class="hi">मार्च 2026</span>
+        </div>
+        <h3>
+          <span class="en">Holi Mahotsav</span>
+          <span class="hi">होली महोत्सव</span>
+        </h3>
+        <p>
+          <span class="en">Celebration of Krishna Leela with colors, bhajans and prasad.</span>
+          <span class="hi">रंगों, भजन-कीर्तन एवं प्रसाद के साथ श्री कृष्ण की लीलाओं का उत्सव।</span>
+        </p>
+        <span class="event-tag">
+          <span class="en">Seasonal Festival</span>
+          <span class="hi">मौसमी पर्व</span>
+        </span>
+      </div>
+
+      <div class="event-card reveal">
+        <div class="event-date">14 April 2026</div>
+        <h3>
+          <span class="en">Mandir Renovation Inauguration</span>
+          <span class="hi">मंदिर पुनर्निर्माण उद्घाटन</span>
+        </h3>
+        <p>
+          <span class="en">Grand inauguration with pooja, havan and community bhandara for all devotees.</span>
+          <span class="hi">भव्य उद्घाटन के अवसर पर विशेष पूजा, हवन एवं सभी भक्तों के लिए विशाल भंडारे का आयोजन।</span>
+        </p>
+        <span class="event-tag">
+          <span class="en">Special Event</span>
+          <span class="hi">विशेष आयोजन</span>
+        </span>
+      </div>
+
+      <div class="event-card reveal">
+        <div class="event-date">
+          <span class="en">August 2026</span>
+          <span class="hi">अगस्त 2026</span>
+        </div>
+        <h3>
+          <span class="en">Janmashtami Mahotsav</span>
+          <span class="hi">जन्माष्टमी महोत्सव</span>
+        </h3>
+        <p>
+          <span class="en">Grand celebration with jhankis, bhajans, jhoola seva and prasad.</span>
+          <span class="hi">झांकियाँ, भजन, झूला सेवा एवं प्रसाद के साथ भव्य उत्सव।</span>
+        </p>
+        <span class="event-tag">
+          <span class="en">Major Festival</span>
+          <span class="hi">मुख्य पर्व</span>
+        </span>
+      </div>
+
+      <div class="event-card reveal">
+        <div class="event-date">
+          <span class="en">September 2026</span>
+          <span class="hi">सितंबर 2026</span>
+        </div>
+        <h3>
+          <span class="en">Radhashtami</span>
+          <span class="hi">राधाष्टमी</span>
+        </h3>
+        <p>
+          <span class="en">Special Shringar, aarti and kirtan for Radha Rani.</span>
+          <span class="hi">श्री राधा रानी के लिए विशेष श्रृंगार, आरती एवं कीर्तन।</span>
+        </p>
+        <span class="event-tag">
+          <span class="en">Major Festival</span>
+          <span class="hi">मुख्य पर्व</span>
+        </span>
+      </div>
+
+      <div class="event-card reveal">
+        <div class="event-date">
+          <span class="en">Every Ekadashi</span>
+          <span class="hi">प्रत्येक एकादशी</span>
+        </div>
+        <h3>
+          <span class="en">Ekadashi Puja</span>
+          <span class="hi">एकादशी पूजा</span>
+        </h3>
+        <p>
+          <span class="en">Special puja and prasad for devotees.</span>
+          <span class="hi">विशेष पूजा एवं प्रसाद वितरण।</span>
+        </p>
+        <span class="event-tag">
+          <span class="en">Regular Seva</span>
+          <span class="hi">नियमित सेवा</span>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION WITH REAL PHOTOS -->
+<section class="gallery" id="gallery">
+  <div class="section-inner">
+
+    <p class="section-label reveal">
+      <span class="en">Darshan</span>
+      <span class="hi">दर्शन</span>
+    </p>
+
+    <h2 class="section-title reveal">
+      <span class="en">Photo Gallery</span>
+      <span class="hi">चित्र संग्रह</span>
+    </h2>
+
+    <div class="ornament-line reveal"><span>✦</span></div>
+
+    <p class="gallery-intro reveal">
+      <span class="en">
+        Glimpses of the mandir through the years — from the original temple to the ongoing renovation and the sacred celebrations of Janmashtami 2025. Click any image to view it larger.
+      </span>
+      <span class="hi">
+        वर्षों के दौरान मंदिर की झलकियाँ — मूल मंदिर से लेकर वर्तमान पुनर्निर्माण और जन्माष्टमी 2025 के पावन उत्सव तक। किसी भी चित्र को बड़ा देखने के लिए उस पर क्लिक करें।
+      </span>
+    </p>
+
+    <div class="gallery-section-label reveal">
+      <span class="en">The Original Mandir</span>
+      <span class="hi">मूल मंदिर</span>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <div class="gallery-item wide"><img src="images/old1.jpeg" alt="Old Mandir — decorated for festival" class="gallery-img g-wide" onclick="openLB(this.src,'Original Mandir — Festival Decoration')"></div>
+      <div class="gallery-item"><img src="images/old2.jpeg" alt="Old Mandir exterior" class="gallery-img g-fixed" onclick="openLB(this.src,'Original Mandir — Front View')"></div>
+      <div class="gallery-item"><img src="images/old3.jpeg" alt="Old Mandir building" class="gallery-img g-fixed" onclick="openLB(this.src,'Original Mandir — 1960')"></div>
+      <div class="gallery-item"><img src="images/old4.jpeg" alt="Old Mandir — side view" class="gallery-img g-fixed" onclick="openLB(this.src,'Original Mandir — Side View')"></div>
+      <div class="gallery-item"><img src="images/old5.jpeg" alt="Old Mandir — entrance" class="gallery-img g-fixed" onclick="openLB(this.src,'Original Mandir — Entrance')"></div>
+      <div class="gallery-item wide"><img src="images/old6.jpeg" alt="Old Mandir — inside darshan" class="gallery-img g-wide" onclick="openLB(this.src,'Original Mandir — Inside Darshan')"></div>
+      <div class="gallery-item"><img src="images/old7.png" alt="Old Mandir — view" class="gallery-img g-fixed" onclick="openLB(this.src,'Original Mandir — Another View')"></div>
+      <div class="gallery-item"><img src="images/old8.webp" alt="Old Mandir — outer view" class="gallery-img g-fixed" onclick="openLB(this.src,'Original Mandir — Outer View')"></div>
+      <div class="gallery-item"><img src="images/old9.webp" alt="Old Mandir — close view" class="gallery-img g-fixed" onclick="openLB(this.src,'Original Mandir — Close View')"></div>
+    </div>
+    <div class="gallery-section-label reveal">Shringar — Idol Darshan</div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item"><img src="images/idol%20old.jpeg" alt="Original Idol of Shri Radha Krishna" class="gallery-img g-fixed" onclick="openLB('images/idol%20old.jpeg','Original Idol — Shri Radha Krishna')"></div>
+      <div class="gallery-item"><img src="images/idol.webp" alt="Present Idol of Shri Radha Krishna" class="gallery-img g-fixed" onclick="openLB(this.src,'Present Idol — Shri Radha Krishna')"></div>
+    </div>
+
+   <div class="gallery-section-label reveal">
+  <span class="en">Renovation &amp; Redevelopment (December 2025 — Ongoing)</span>
+  <span class="hi">पुनर्निर्माण एवं विकास (दिसंबर 2025 — जारी)</span>
+</div>
+
+<div class="gallery-grid reveal">
+      <div class="gallery-item wide"><img src="images/ren1.jpg" alt="OLd Temple Dismantling" class="gallery-img g-fixed" onclick="openLB(this.src,'OLd Temple Dismantling')" onerror="tryExt(this,['images/ren1.webp','images/ren1.png','images/ren1.jpeg'])"></div>
+      <div class="gallery-item"><img src="images/ren2.jpg" alt="New mandir door" class="gallery-img g-fixed" onclick="openLB(this.src,'New Mandir — Steel Door &amp; Flooring')" onerror="tryExt(this,['images/ren2.webp','images/ren2.png','images/ren2.jpeg'])"></div>
+      <div class="gallery-item"><img src="images/ren3.png" alt="Renovation workers" class="gallery-img g-fixed" onclick="openLB(this.src,'Artisans at Work — Tile Cladding')" onerror="tryExt(this,['images/ren3.webp','images/ren3.jpeg','images/ren3.jpg'])"></div>
+      <div class="gallery-item"><img src="images/ren4.webp" alt="Renovation cladding work" class="gallery-img g-fixed" onclick="openLB(this.src,'Renovation — Cladding in Progress')" onerror="tryExt(this,['images/ren4.jpg','images/ren4.png','images/ren4.jpeg'])"></div>
+      <div class="gallery-item"><img src="images/ren5.webp" alt="Shikhara close-up" class="gallery-img g-fixed" onclick="openLB(this.src,'Shikhara Close-up')"></div>
+      <div class="gallery-item"><img src="images/ren6.jpg" alt="Renovation — exterior work" class="gallery-img g-fixed" onclick="openLB(this.src,'Renovation — Exterior Work')" onerror="tryExt(this,['images/ren6.webp','images/ren6.png','images/r.webp','images/r.jpg'])"></div>
+      <div class="gallery-item"><img src="images/ren7.webp" alt="Renovation — additional view" class="gallery-img g-fixed" onclick="openLB(this.src,'Renovation — Additional View')" onerror="tryExt(this,['images/ren7.jpg','images/ren7.png','images/ren7.jpeg'])"></div>
+    </div>
+
+    <div class="gallery-section-label reveal">
+  <span class="en">The New Mandir — Final Phase 2026</span>
+  <span class="hi">नया मंदिर — अंतिम चरण 2026</span>
+</div>
+
+<div class="gallery-grid reveal">
+      <div class="gallery-item wide"><img src="images/new0.jpg" alt="New mandir — early final stage" class="gallery-img g-wide" onclick="openLB(this.src,'New Mandir — Final Stage')"></div>
+    </div>
+
+    <!-- MANDIR VIDEO -->
+    <div class="gallery-video-wrap reveal">
+      <div class="gallery-video-card">
+        <video controls preload="metadata">
+          <source src="images/mandir-video.mp4" type="video/mp4">
+          <span class="en">Your browser does not support video playback.</span>
+          <span class="hi">आपका ब्राउज़र वीडियो नहीं चला सकता।</span>
+        </video>
+        <div class="gallery-video-caption">
+          <div class="vc-icon">🎬</div>
+          <p>
+            <span class="en">Shree Radha Krishna Mandir, Reevan — video darshan of the new mandir. <span class="vc-tag">New 2026</span></span>
+            <span class="hi">श्री राधा कृष्ण मंदिर, रीवां — नए मंदिर का वीडियो दर्शन। <span class="vc-tag">नया 2026</span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <div class="gallery-item"><img src="images/new1.jpg" alt="New completed mandir exterior" class="gallery-img g-fixed" onclick="openLB(this.src,'New Mandir — Completed Exterior 2026')"></div>
+      <div class="gallery-item"><img src="images/new2.jpg" alt="New Singhasan of Shri Radha Krishna" class="gallery-img g-fixed" onclick="openLB(this.src,'New Singhasan — Shri Radha Krishna 2026')"></div>
+      <div class="gallery-item"><img src="images/new3.webp" alt="New mandir exterior view" class="gallery-img g-fixed" onclick="openLB(this.src,'New Mandir — Exterior View')"></div>
+      <div class="gallery-item"><img src="images/new4.jpg" alt="New mandir front gate" class="gallery-img g-fixed" onclick="openLB(this.src,'New Mandir — Front Gate')"></div>
+      <div class="gallery-item wide"><img src="images/singh.webp" alt="New Singhasan — Shri Radha Krishna" class="gallery-img g-wide" onclick="openLB(this.src,'New Singhasan — Shri Radha Krishna 2026')"></div>
+    </div>
+
+   <div class="gallery-section-label reveal">
+  <span class="en">Janmashtami Mahotsav 2025</span>
+  <span class="hi">जन्माष्टमी महोत्सव 2025</span>
+</div>
+
+<div class="gallery-grid reveal">
+      <div class="gallery-item wide"><img src="images/janm25%20(4).webp" alt="Janmashtami Jhanki 2025" class="gallery-img g-wide" onclick="openLB('images/janm25%20(4).webp','Janmashtami Jhanki — 2025')"></div>
+      <div class="gallery-item"><img src="images/janm25.webp" alt="Janmashtami Celebration 2025" class="gallery-img g-fixed" onclick="openLB(this.src,'Janmashtami — Celebration 2025')"></div>
+      <div class="gallery-item"><img src="images/janm26.webp" alt="Radha Krishna Shringar Janmashtami" class="gallery-img g-fixed" onclick="openLB(this.src,'Shri Radha Krishna — Janmashtami Shringar 2025')"></div>
+      <div class="gallery-item"><img src="images/janm27.webp" alt="Janmashtami Darshan" class="gallery-img g-fixed" onclick="openLB(this.src,'Janmashtami — Darshan 2025')"></div>
+      <div class="gallery-item"><img src="images/janm28.webp" alt="Janmashtami — additional darshan 2025" class="gallery-img g-fixed" onclick="openLB(this.src,'Janmashtami — Additional Darshan 2025')"></div>
+    </div>
+
+    <div class="gallery-section-label reveal">
+  <span class="en">Laddu Gopal Darshan &amp; Radha Krishna Shringar</span>
+  <span class="hi">लड्डू गोपाल दर्शन एवं राधा कृष्ण श्रृंगार</span>
+</div>
+
+<div class="gallery-grid reveal">
+      <div class="gallery-item"><img src="images/laddo.webp" alt="Laddu Gopal Darshan" class="gallery-img g-fixed" onclick="openLB(this.src,'Laddu Gopal — Darshan')"></div>
+    </div>
+
+    <div class="gallery-section-label reveal">Mandir from Chhaun-Sanjarpur Road — Street View</div>
+    <p class="gallery-intro reveal" style="font-size:.9rem;margin-bottom:1.5rem;">Views of Shree Radha Krishna Mandir as seen from the Chhaun-Sanjarpur Road, captured via Google Maps Street View and local photography. Add more images as <code>map4.png</code>, <code>map5.png</code> etc.</p>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item wide"><img src="images/map1.png" alt="Mandir — view from Chhaun-Sanjarpur Road" class="gallery-img g-wide" onclick="openLB(this.src,'Mandir — View from Chhaun-Sanjarpur Road')"></div>
+      <div class="gallery-item"><img src="images/map3.png" alt="Mandir — street view approach" class="gallery-img g-fixed" onclick="openLB(this.src,'Mandir — Street View Approach')"></div>
+    </div>
+    <div class="street-view-grid reveal" style="margin-top:1rem;">
+      <div class="street-view-card">
+        <div class="sv-visual">
+          <div class="sv-icon">🛕</div>
+          <div class="sv-label">Shree Radha Krishna Mandir<br><span>Reevan (Babhangaon), U.P.</span></div>
+        </div>
+        <a href="https://maps.app.goo.gl/Uc5WwGC8RQSxTYyY7" target="_blank" class="sv-btn">📍 Open in Google Maps →</a>
+      </div>
+      <div class="street-view-card">
+        <div class="sv-visual sv-visual-2">
+          <div class="sv-icon">🗺️</div>
+          <div class="sv-label">Explore via Street View<br><span>Chhaun-Sanjarpur Road, Reevan</span></div>
+        </div>
+        <a href="https://www.google.com/maps/@25.9832767,82.9633319,3a,75y,245.45h,78.44t/data=!3m7!1e1!3m5!1sjyOvxoznr1OAtcuReW1xlA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D11.562992259348533%26panoid%3DjyOvxoznr1OAtcuReW1xlA%26yaw%3D245.45191951489107!7i13312!8i6656?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="sv-btn">🌍 Open Street View Panorama →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLB()">
+  <span class="lb-close" onclick="closeLB()">✕</span>
+  <img id="lb-img" src="" alt="">
+  <div class="lb-caption" id="lb-cap"></div>
+</div>
+
+<section class="trustees" id="trustees">
+  <div class="section-inner">
+
+    <!-- ── Section Header ── -->
+    <p class="section-label reveal">
+      <span class="en">Mandir Trust</span>
+      <span class="hi">मंदिर ट्रस्ट</span>
+    </p>
+    <h2 class="section-title reveal">
+      <span class="en">Trustees &amp; Founding Family</span>
+      <span class="hi">ट्रस्टी एवं संस्थापक परिवार</span>
+    </h2>
+    <div class="ornament-line reveal"><span>✦</span></div>
+
+    <p class="trustees-intro reveal">
+      <span class="en">The mandir has been established and sustained by the founding family across generations. The trust comprises nine family members who are actively involved in the seva and upkeep of Shree Radha Krishna Mandir. The sons of Late Shree Lalata Rai are honoured here for their guiding presence and deep connection to the mandir's heritage.</span>
+      <span class="hi">यह मंदिर संस्थापक परिवार की पीढ़ियों की भक्ति और सेवा से स्थापित एवं संचालित है। ट्रस्ट में परिवार के नौ सदस्य सम्मिलित हैं जो मंदिर की सेवा और देखरेख में सक्रिय रूप से योगदान दे रहे हैं।</span>
+    </p>
+
+    <!-- ────────────────────────────────────────
+         BLOCK 1: SONS OF LATE SHREE LALATA RAI
+         (Honoured elders — 3 columns)
+    ──────────────────────────────────────── -->
+    <div class="trustees-sub-label reveal">
+      <span class="en">— Sons of Late Shree Lalata Rai — Honoured for Their Guidance —</span>
+      <span class="hi">— स्वर्गीय श्री ललाता राय जी के पुत्र — श्रद्धापूर्वक स्मरण —</span>
+    </div>
+
+    <div class="trustees-row-label reveal">
+      <span class="en">Honoured Members (Sons of Late Shree Lalata Rai)</span>
+      <span class="hi">सम्माननीय सदस्य (स्वर्गीय श्री ललाता राय जी के पुत्र)</span>
+    </div>
+
+    <div class="trustees-grid trustees-elders reveal">
+
+      <!-- Late Bindra Rai -->
+      <div class="trustee-card trustee-card--late">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee1.jpg" alt="Late Shree Bindra Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Late Shree Bindra Rai</span>
+          <span class="hi">स्वर्गीय श्री बिंद्रा राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Eldest Son of Late Shree Lalata Rai</span>
+          <span class="hi">स्वर्गीय श्री ललाता राय जी के ज्येष्ठ पुत्र</span>
+        </div>
+        <div class="trustee-desc trustee-desc--italic">
+          <span class="en">🙏 No longer with us. Remembered with love and deep reverence.</span>
+          <span class="hi">🙏 अब हमारे बीच नहीं हैं। प्रेम और श्रद्धा से स्मरण किया जाता है।</span>
+        </div>
+      </div>
+
+      <!-- Shree Shriprakash Rai -->
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee2.jpg" alt="Shree Shriprakash Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Shriprakash Rai</span>
+          <span class="hi">श्री श्रीप्रकाश राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Son of Late Shree Lalata Rai</span>
+          <span class="hi">स्वर्गीय श्री ललाता राय जी के पुत्र</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+      <!-- Shree Shridhar Rai -->
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee3.jpg" alt="Shree Shridhar Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Shridhar Rai</span>
+          <span class="hi">श्री श्रीधर राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Son of Late Shree Lalata Rai</span>
+          <span class="hi">स्वर्गीय श्री ललाता राय जी के पुत्र</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+    </div><!-- /trustees-elders -->
+
+    <!-- ────────────────────────────────────────
+         BLOCK 2: TRUST MEMBERS (9 members)
+    ──────────────────────────────────────── -->
+    <div class="trustees-row-label reveal" style="margin-top:3rem;">
+      <span class="en">Trust Members — 9 Members</span>
+      <span class="hi">ट्रस्ट सदस्य — 9 सदस्य</span>
+    </div>
+
+    <div class="trustees-grid trustees-sons reveal">
+
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee4.JPG" alt="Shree Subhash Chandra Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Subhash Chandra Rai</span>
+          <span class="hi">श्री सुभाष चंद्र राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Trust Member</span><span class="hi">ट्रस्ट सदस्य</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee5.JPG" alt="Shree Amichandra Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Amichandra Rai</span>
+          <span class="hi">श्री अमीचंद्र राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Trust Member</span><span class="hi">ट्रस्ट सदस्य</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee6.JPG" alt="Shree Ramesh Chandra Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Ramesh Chandra Rai</span>
+          <span class="hi">श्री रमेश चंद्र राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Trust Member</span><span class="hi">ट्रस्ट सदस्य</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee7.JPG" alt="Shree Ghanshyam Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Ghanshyam Rai</span>
+          <span class="hi">श्री घनश्याम राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Trust Member</span><span class="hi">ट्रस्ट सदस्य</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee8.JPG" alt="Shree Prem Chandra Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Prem Chandra Rai</span>
+          <span class="hi">श्री प्रेम चंद्र राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Trust Member</span><span class="hi">ट्रस्ट सदस्य</span>
+        </div>
+        <!-- FIX 3: removed double << -->
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee9.JPG" alt="Shree Pramod Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Pramod Rai</span>
+          <span class="hi">श्री प्रमोद राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Trust Member</span><span class="hi">ट्रस्ट सदस्य</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee10.JPG" alt="Shree Pradeep Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Pradeep Rai</span>
+          <span class="hi">श्री प्रदीप राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Trust Member</span><span class="hi">ट्रस्ट सदस्य</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee11.JPG" alt="Shree Pawan Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <span class="en">Shree Pawan Rai</span>
+          <span class="hi">श्री पवन राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Trust Member</span><span class="hi">ट्रस्ट सदस्य</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+      <div class="trustee-card">
+        <div class="trustee-photo-wrap">
+          <img src="images/trustee12.JPG" alt="Shree Sandeep Rai" class="trustee-photo"
+               onerror="this.parentElement.innerHTML='<div class=\'trustee-placeholder\'>🙏</div>'">
+        </div>
+        <div class="trustee-name">
+          <!-- FIX 2: was </spa instead of </span> -->
+          <span class="en">Shree Sandeep Rai</span>
+          <span class="hi">श्री संदीप राय</span>
+        </div>
+        <div class="trustee-role">
+          <span class="en">Trust Member</span><span class="hi">ट्रस्ट सदस्य</span>
+        </div>
+        <div class="trustee-desc">
+          <span class="en">Village: Reevan, Uttar Pradesh</span>
+          <span class="hi">ग्राम: रीवां, उत्तर प्रदेश</span>
+        </div>
+      </div>
+
+    </div><!-- /trustees-sons -->
+
+    <!-- ── Ornament divider ── -->
+    <div class="ornament-line reveal" style="margin-top:4rem;"><span>✦</span></div>
+
+    <!-- ────────────────────────────────────────
+         BLOCK 3: DONORS
+    ──────────────────────────────────────── -->
+    <div class="donors-section-wrap">
+
+      <div class="trustees-sub-label reveal" style="margin-bottom:1.5rem;">
+        <span class="en">— Valued Contributions to the Mandir —</span>
+        <span class="hi">— मंदिर के प्रति समर्पित योगदानकर्ता —</span>
+      </div>
+      <p class="trustees-intro reveal">
+        <span class="en">We express our heartfelt gratitude to all devotees and well-wishers whose generous contributions have made the renovation and seva of Shree Radha Krishna Mandir possible. Their names are enshrined here with our deepest reverence.</span>
+        <span class="hi">हम उन सभी भक्तों और शुभचिंतकों के प्रति हृदय से आभार व्यक्त करते हैं जिनके उदार सहयोग से मंदिर का पुनर्निर्माण एवं सेवा संभव हुई। उनके नाम यहाँ श्रद्धापूर्वक अंकित हैं।</span>
+      </p>
+
+      <div class="donors-box reveal">
+        <div class="donors-header">
+          <span class="en">🙏 Mahadaata — Those Who Gave Generously</span>
+          <span class="hi">🙏 महादाता — जिन्होंने उदारता से दान दिया</span>
+        </div>
+
+        <div class="donors-grid">
+          <div class="donor-name"><span class="en">SMT USHA RAI</span><span class="hi">श्रीमती उषा राय</span></div>
+          <div class="donor-name"><span class="en">SH JAGATNARAYAN RAI</span><span class="hi">श्री जगतनारायण राय</span></div>
+          <div class="donor-name"><span class="en">SMT BINDO RAI</span><span class="hi">श्रीमती बिंदो राय</span></div>
+          <div class="donor-name"><span class="en">SH PRINCE RAI</span><span class="hi">श्री प्रिंस राय</span></div>
+          <div class="donor-name"><span class="en">SH JAGDAMBA RAI</span><span class="hi">श्री जगदम्बा राय</span></div>
+          <div class="donor-name"><span class="en">SH RAKESH RAI (SODHARI)</span><span class="hi">श्री राकेश राय (सोधरी)</span></div>
+          <div class="donor-name"><span class="en">SH ANIRUDDH RAI</span><span class="hi">श्री अनिरुद्ध राय</span></div>
+          <div class="donor-name"><span class="en">SMT REEMA RAI</span><span class="hi">श्रीमती रीमा राय</span></div>
+          <div class="donor-name"><span class="en">SMT DIMPLE RAI</span><span class="hi">श्रीमती डिम्पल राय</span></div>
+          <div class="donor-name"><span class="en">SMT RAJNI RAI</span><span class="hi">श्रीमती रजनी राय</span></div>
+          <div class="donor-name"><span class="en">SMT ANJALI RAI</span><span class="hi">श्रीमती अंजली राय</span></div>
+          <div class="donor-name"><span class="en">SH VIVEKANAND RAI</span><span class="hi">श्री विवेकानंद राय</span></div>
+          <!-- Replace "DONOR 10" with actual name when available -->
+          <div class="donor-name"><span class="en">—</span><span class="hi">—</span></div>
+        </div>
+
+        <div class="donors-footer">
+          <span class="en">To donate and have your name added here, please visit the <a href="#donate">Donate</a> section or contact the mandir trustee.</span>
+          <span class="hi">दान करने और यहाँ अपना नाम जोड़ने के लिए <a href="#donate">दान</a> अनुभाग देखें या मंदिर ट्रस्टी से संपर्क करें।</span>
+        </div>
+      </div>
+
+    </div><!-- /donors-section-wrap -->
+
+  </div>
+</section>
+
+
+
+<section class="donate" id="donate">
+  <div class="section-inner">
+
+    <p class="section-label reveal">
+      <span class="en">Seva &amp; Daan</span>
+      <span class="hi">सेवा एवं दान</span>
+    </p>
+
+    <h2 class="section-title reveal">
+      <span class="en">Make a Donation</span>
+      <span class="hi">दान करें</span>
+    </h2>
+
+    <div class="ornament-line reveal"><span>✦</span></div>
+
+    <p class="donate-intro reveal">
+      <span class="en">
+        Your generous donations support the ongoing renovation, daily seva, festival celebrations, and the upkeep of the mandir. Every contribution — big or small — is an act of devotion at the lotus feet of Shri Radha Krishna.
+      </span>
+      <span class="hi">
+        आपके उदार दान से मंदिर के पुनर्निर्माण, दैनिक सेवा, उत्सवों और देखभाल में सहायता मिलती है। हर योगदान — छोटा या बड़ा — श्री राधा कृष्ण के चरणों में समर्पित भक्ति का एक रूप है।
+      </span>
+    </p>
+
+    <div class="donate-grid">
+
+      <div class="donate-card reveal">
+        <div class="donate-icon">📱</div>
+
+        <h3>
+          <span class="en">UPI / Google Pay</span>
+          <span class="hi">यूपीआई / गूगल पे</span>
+        </h3>
+
+        <p>
+          <span class="en">Instant transfer — the easiest way to donate from anywhere in India.</span>
+          <span class="hi">तुरंत भुगतान — भारत में कहीं से भी दान करने का सबसे आसान तरीका।</span>
+        </p>
+
+        <div class="upi-id">
+          yourtemple@upi<br>
+          <small style="opacity:.6">(Replace with actual UPI ID)</small>
+        </div>
+
+        <p class="donate-note-sm">
+          <span class="en">Works with PhonePe, Paytm, Google Pay, BHIM</span>
+          <span class="hi">PhonePe, Paytm, Google Pay, BHIM पर कार्य करता है</span>
+        </p>
+      </div>
+
+      <div class="donate-card reveal">
+        <div class="donate-icon">▦</div>
+
+        <h3>
+          <span class="en">Scan QR Code</span>
+          <span class="hi">QR कोड स्कैन करें</span>
+        </h3>
+
+        <p>
+          <span class="en">Scan to pay via any UPI-enabled app. No need to type an ID.</span>
+          <span class="hi">किसी भी UPI ऐप से स्कैन कर भुगतान करें। ID टाइप करने की आवश्यकता नहीं।</span>
+        </p>
+
+        <div class="qr-box">
+          <span class="en">Add your UPI QR code image here (from PhonePe / GPay)</span>
+          <span class="hi">यहाँ अपना UPI QR कोड जोड़ें (PhonePe / GPay से)</span>
+        </div>
+
+        <p class="donate-note-sm">
+          <span class="en">Generate free from Google Pay or PhonePe app</span>
+          <span class="hi">Google Pay या PhonePe ऐप से निःशुल्क बनाएं</span>
+        </p>
+      </div>
+
+      <div class="donate-card reveal">
+        <div class="donate-icon">🏦</div>
+
+        <h3>
+          <span class="en">Bank Transfer / NEFT</span>
+          <span class="hi">बैंक ट्रांसफर / NEFT</span>
+        </h3>
+
+        <p>
+          <span class="en">For larger donations or from overseas devotees who cannot use UPI.</span>
+          <span class="hi">बड़े दान या विदेश से दान करने वालों के लिए।</span>
+        </p>
+
+        <div class="upi-id" style="font-size:.82rem;text-align:left;line-height:1.9;">
+          <span class="en">
+            Bank: [Bank Name]<br>
+            A/C No: [Account Number]<br>
+            IFSC: [IFSC Code]<br>
+            Name: Shree Radha Krishna Mandir
+          </span>
+          <span class="hi">
+            बैंक: [बैंक नाम]<br>
+            खाता संख्या: [Account Number]<br>
+            IFSC: [IFSC Code]<br>
+            नाम: श्री राधा कृष्ण मंदिर
+          </span>
+        </div>
+
+        <p class="donate-note-sm">
+          <span class="en">Please share transaction ID after transfer</span>
+          <span class="hi">कृपया ट्रांजैक्शन ID साझा करें</span>
+        </p>
+      </div>
+
+    </div>
+
+    <p class="donate-intro reveal" style="margin-top:2rem;font-size:.9rem;opacity:.7;">
+      <span class="en">
+        🙏 <em>For renovation fund contributions or any queries, please contact the mandir trustee. All donations go directly toward the ongoing renovation and daily seva of Shri Radha Krishna.</em>
+      </span>
+      <span class="hi">
+        🙏 <em>पुनर्निर्माण हेतु दान या किसी भी जानकारी के लिए कृपया मंदिर ट्रस्टी से संपर्क करें। सभी दान मंदिर के पुनर्निर्माण और दैनिक सेवा में उपयोग किए जाते हैं।</em>
+      </span>
+    </p>
+
+  </div>
+</section>  
+
+
+
+
+<section class="contact" id="contact">
+  <div class="section-inner">
+
+    <p class="section-label reveal">
+      <span class="en">Sampark</span>
+      <span class="hi">संपर्क</span>
+    </p>
+
+    <h2 class="section-title reveal">
+      <span class="en">Contact Us</span>
+      <span class="hi">संपर्क करें</span>
+    </h2>
+
+    <div class="ornament-line reveal"><span>✦</span></div>
+
+    <div class="contact-grid">
+
+      <div class="reveal">
+
+        <div class="cib">
+          <div class="ci">📍</div>
+          <div>
+            <h4>
+              <span class="en">Address</span>
+              <span class="hi">पता</span>
+            </h4>
+            <p>
+              <span class="en">
+                Shree Radha Krishna Mandir<br>
+                Reevan (Babhangaon), Uttar Pradesh<br>
+                India — PIN: 276302<br>
+                Plus Code: XXM6+FX4
+              </span>
+              <span class="hi">
+                श्री राधा कृष्ण मंदिर<br>
+                रीवां (बभनगाँव), उत्तर प्रदेश<br>
+                भारत — पिन: 276302<br>
+                प्लस कोड: XXM6+FX4
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="cib">
+          <div class="ci">🗺️</div>
+          <div>
+            <h4>
+              <span class="en">Google Maps</span>
+              <span class="hi">गूगल मैप</span>
+            </h4>
+            <a href="https://maps.app.goo.gl/Uc5WwGC8RQSxTYyY7" target="_blank">
+              <span class="en">Open Directions in Google Maps →</span>
+              <span class="hi">गूगल मैप में दिशा देखें →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="cib">
+          <div class="ci">📞</div>
+          <div>
+            <h4>
+              <span class="en">Phone / WhatsApp</span>
+              <span class="hi">फोन / व्हाट्सएप</span>
+            </h4>
+            <a href="tel:+919451258631">+919451258631</a>
+	    <a href="tel:+919910159715">+919910159715</a>
+            <p style="font-size:.85rem;color:var(--text-purple);margin-top:.2rem;">
+              <span class="en">Available 8 AM – 8 PM daily</span>
+              <span class="hi">प्रतिदिन सुबह 8 बजे से शाम 8 बजे तक उपलब्ध</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="cib">
+          <div class="ci">✉️</div>
+          <div>
+            <h4>
+              <span class="en">Email</span>
+              <span class="hi">ईमेल</span>
+            </h4>
+            <a href="mailto:trustreevanupshreeradhakrishna@gmail.com">trustreevanupshreeradhakrishna@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="cib">
+          <div class="ci">🕐</div>
+          <div>
+            <h4>
+              <span class="en">Temple Hours</span>
+              <span class="hi">मंदिर समय</span>
+            </h4>
+            <p>
+              <span class="en">
+                Morning: 9:00 AM – 12:00 PM<br>
+                Evening: 4:00 PM – 8:00 PM<br>
+                All days including Sunday
+              </span>
+              <span class="hi">
+                प्रातः: 9:00 बजे – 12:00 बजे<br>
+                सायं: 4:00 बजे – 8:00 बजे<br>
+                सभी दिन (रविवार सहित)
+              </span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="reveal">
+
+        <p style="font-size:1.05rem;color:var(--text-light);margin-bottom:1.2rem;line-height:1.7;">
+          <span class="en">
+            Send a message for puja bookings, event enquiries, renovation contributions, volunteer interest, or any questions about the mandir.
+          </span>
+          <span class="hi">
+            पूजा बुकिंग, कार्यक्रम जानकारी, पुनर्निर्माण सहयोग, सेवा (वॉलंटियर) या किसी भी प्रश्न के लिए संदेश भेजें।
+          </span>
+        </p>
+
+        <div class="cf">
+
+          <input type="text" placeholder="Your Full Name" data-en="Your Full Name" data-hi="आपका पूरा नाम" />
+
+          <input type="tel" placeholder="Mobile Number" data-en="Mobile Number" data-hi="मोबाइल नंबर" />
+
+          <input type="email" placeholder="Email Address (optional)" data-en="Email Address (optional)" data-hi="ईमेल पता (वैकल्पिक)" />
+
+          <select>
+            <option value="" disabled selected data-en="Purpose of Message" data-hi="संदेश का उद्देश्य">Purpose of Message</option>
+            <option>General Enquiry</option>
+            <option>Puja / Ceremony Booking</option>
+            <option>Event Information</option>
+            <option>Donation / Renovation Fund</option>
+            <option>Volunteer / Seva</option>
+            <option>Family History Enquiry</option>
+          </select>
+
+          <textarea placeholder="Your message..." data-en="Your message..." data-hi="अपना संदेश लिखें..."></textarea>
+
+          <button type="button" onclick="sendMsg()">
+            <span class="en">Send Message 🙏</span>
+            <span class="hi">संदेश भेजें 🙏</span>
+          </button>
+
+          <p class="fn">
+            <span class="en">* This opens your email app. You can also call or WhatsApp directly.</span>
+            <span class="hi">* यह आपके ईमेल ऐप को खोलेगा। आप सीधे कॉल या व्हाट्सएप भी कर सकते हैं।</span>
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ===== REVIEWS & SOCIAL SECTION ===== -->
+<section class="reviews-social">
+  <div class="section-inner">
+
+    <!-- Social Icons Row -->
+    <div class="social-row reveal">
+      <p class="social-label">
+        <span class="en">Follow &amp; Connect</span>
+        <span class="hi">हमसे जुड़ें</span>
+      </p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="soc-btn soc-insta">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+          </svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="soc-btn soc-fb">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube" class="soc-btn soc-yt">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" stroke="currentColor" stroke-width="2"/>
+            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <span>YouTube</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="ornament-line reveal"><span>✦</span></div>
+
+    <!-- Reviews Heading -->
+    <p class="section-label reveal">
+      <span class="en">Devotee Testimonials</span>
+      <span class="hi">भक्तों के अनुभव</span>
+    </p>
+    <h2 class="section-title reveal">
+      <span class="en">What Devotees Say</span>
+      <span class="hi">भक्तों की आवाज़</span>
+    </h2>
+
+    <!-- Reviews Grid -->
+    <div class="reviews-grid">
+
+  <!-- Review 1 -->
+  <div class="review-card reveal">
+    <div class="review-stars">★★★★★</div>
+    <blockquote class="review-text">
+      <span class="hi">
+        "श्री राधा कृष्ण मंदिर रीवां (बभनगाँव) में स्थित है, काली माता मंदिर से 200 मीटर दूर, सनजरपुर उत्तर प्रदेश के पास। यह देवी राधा और भगवान कृष्ण को समर्पित है, जिसे 1960 के दशक में स्वर्गीय श्री कल्पनाथ राय जी ने बनवाया था। तब से उनके परिवार के सदस्य इसका संचालन कर रहे हैं। हर वर्ष यहाँ श्री कृष्ण जन्माष्टमी का उत्सव मनाया जाता है। हमारे परिवार के लिए यह मंदिर केवल पूजा का स्थान नहीं, बल्कि हमारे पूर्वजों की जीवित स्मृति और हमारी अटूट जड़ों का प्रतीक है। श्री राधा कृष्ण मंदिर हमारे अतीत की भावना को संजोते हुए हमें भविष्य की ओर मार्गदर्शन देता रहेगा।"
+      </span>
+      <span class="en">
+        "Shree Radha Krishna Mandir, located in Reevan (Babhangaon) near Sanjarpur, Uttar Pradesh, about 200 meters from Kali Mata Temple, is dedicated to Goddess Radha and Lord Krishna. It was built in the 1960s by Late Shree Kalapnath Rai Ji. Since then, his family members have been managing and preserving this sacred place. Every year, the festival of Shri Krishna Janmashtami is celebrated here with great devotion. For our family, this temple is not just a place of worship, but a living memory of our ancestors and a symbol of our deep-rooted heritage. Shree Radha Krishna Mandir will continue to guide us towards the future while preserving the essence of our past."
+      </span>
+    </blockquote>
+    <div class="review-author">
+      <div class="review-avatar">A</div>
+      <div>
+        <div class="review-name">Ayush Rai</div>
+        <div class="review-place">
+          <span class="hi">Google समीक्षा</span>
+          <span class="en">Google Review</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review 2 -->
+  <div class="review-card reveal">
+    <div class="review-stars">★★★★★</div>
+    <blockquote class="review-text">
+      <span class="hi">"जय श्री राधा श्याम की 🙏🙏"</span>
+      <span class="en">"Jai Shri Radha Shyam 🙏🙏"</span>
+    </blockquote>
+    <div class="review-author">
+      <div class="review-avatar">P</div>
+      <div>
+        <div class="review-name">Prince Rai</div>
+        <div class="review-place">
+          <span class="hi">Google समीक्षा</span>
+          <span class="en">Google Review</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review 3 -->
+  <div class="review-card reveal">
+    <div class="review-stars">★★★★★</div>
+    <blockquote class="review-text">
+      <span class="en">"Peaceful place 🚩🚩🙏"</span>
+      <span class="hi">"एक शांत और पवित्र स्थान 🚩🚩🙏"</span>
+    </blockquote>
+    <div class="review-author">
+      <div class="review-avatar">H</div>
+      <div>
+        <div class="review-name">Happy gaud Happy</div>
+        <div class="review-place">
+          <span class="en">Google Review</span>
+          <span class="hi">Google समीक्षा</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review 4 -->
+  <div class="review-card reveal">
+    <div class="review-stars">★★★★★</div>
+    <blockquote class="review-text">
+      <span class="hi">
+        "कहते हैं कि कुछ मंदिरों में जाकर बहुत सुकून मिलता है — यह उनमें से एक है। इसमें जाते ही मेरी जेहन को बहुत तसल्ली मिली! गाँव के मंदिर में बहुत ज़्यादा सादगी और सुकून भरा पड़ा होता है!! और यह उस बात को सच साबित करता है!!! एक बार ज़रूर होकर आइएगा!! जय राधा कृष्ण!!!"
+      </span>
+      <span class="en">
+        "It is said that some temples bring immense peace — this is truly one of them. The moment I entered, I felt deep calm and satisfaction in my mind. Village temples carry a unique simplicity and serenity, and this place perfectly proves that. You should definitely visit at least once! Jai Radha Krishna!"
+      </span>
+    </blockquote>
+    <div class="review-author">
+      <div class="review-avatar">M</div>
+      <div>
+        <div class="review-name">Mamta Rai</div>
+        <div class="review-place">
+          <span class="hi">Google समीक्षा</span>
+          <span class="en">Google Review</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+<!-- ===== /REVIEWS & SOCIAL SECTION ===== -->
+
+<footer>
+  <div class="fi">
+
+    <span class="fo">ॐ</span>
+
+    <div class="fn2">
+      <span class="en">Shree Radha Krishna Mandir</span>
+      <span class="hi">श्री राधा कृष्ण मंदिर</span>
+    </div>
+
+    <div class="fs">
+      <span class="en">Reevan (Babhangaon), Uttar Pradesh — Radhe Radhe</span>
+      <span class="hi">रीवां (बभनगाँव), उत्तर प्रदेश — राधे राधे</span>
+    </div>
+    
+    <div class="fl">
+      <a href="#home">
+        <span class="en">Home</span>
+        <span class="hi">होम</span>
+      </a>
+      <a href="#about">
+        <span class="en">About</span>
+        <span class="hi">परिचय</span>
+      </a>
+      <a href="#founders">
+        <span class="en">Founders</span>
+        <span class="hi">संस्थापक</span>
+      </a>
+      <a href="#timings">
+        <span class="en">Timings</span>
+        <span class="hi">समय</span>
+      </a>
+      <a href="#events">
+        <span class="en">Events</span>
+        <span class="hi">उत्सव</span>
+      </a>
+      <a href="#gallery">
+        <span class="en">Gallery</span>
+        <span class="hi">चित्र</span>
+      </a>
+      <a href="#donate">
+        <span class="en">Donate</span>
+        <span class="hi">दान</span>
+      </a>
+      <a href="#trustees">
+        <span class="en">Trustees</span>
+        <span class="hi">ट्रस्टी</span>
+      </a>
+      <a href="#contact">
+        <span class="en">Contact</span>
+        <span class="hi">संपर्क</span>
+      </a>
+    </div>
+
+    <div class="fc">
+      <span class="en">
+        © 2026 Shree Radha Krishna Mandir, Reevan. Est. 1960 by Late Shree Kalapnath Rai (Sadhu Baba). Made with 🙏 for the devotees.
+      </span>
+      <span class="hi">
+        © 2026 श्री राधा कृष्ण मंदिर, रीवां। स्थापना 1960 — स्वर्गीय श्री कल्पनाथ राय (साधु बाबा) द्वारा। भक्तों के लिए 🙏 समर्पित।
+      </span>
+
+      <br>
+
+      <small style="opacity:.5;font-size:.7rem;">
+        <span class="en">
+          In memory of Sadhu Baba &amp; Pujari Baba — whose devotion built this sacred place.
+        </span>
+        <span class="hi">
+          साधु बाबा एवं पुजारी बाबा की स्मृति में — जिनकी भक्ति ने इस पवित्र स्थल का निर्माण किया।
+        </span>
+      </small>
+      <p>© 2026 Shree Radha Krishna Mandir Reevan. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.reveal').forEach(el=>{
+  new IntersectionObserver(([e],o)=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target);}},{threshold:.12}).observe(el);
+});
+function openLB(src, cap){
+  document.getElementById('lb-img').src=src;
+  document.getElementById('lb-cap').textContent=cap||'';
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeLB(){
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB();});
+function sendMsg(){
+  const n=document.querySelector('.cf input[type=text]').value||'Devotee';
+  const m=document.querySelector('.cf textarea').value||'(no message)';
+  const p=document.querySelector('.cf select').value||'General Enquiry';
+  window.location.href='mailto:mandirreevan@gmail.com?subject='+encodeURIComponent(p+' — from '+n)+'&body='+encodeURIComponent('Name: '+n+'\n\nMessage:\n'+m);
+}
+/* 🌐 LANGUAGE TOGGLE */
+function toggleLang(lang){
+
+  document.querySelectorAll('.en').forEach(el=>{
+    el.style.display = (lang === 'en') ? 'inline' : 'none';
+  });
+
+  document.querySelectorAll('.hi').forEach(el=>{
+    el.style.display = (lang === 'hi') ? 'inline' : 'none';
+  });
+
+  // input placeholders
+  document.querySelectorAll('input, textarea').forEach(el=>{
+    if(lang === 'hi' && el.dataset.hi){
+      el.placeholder = el.dataset.hi;
+    }
+    if(lang === 'en' && el.dataset.en){
+      el.placeholder = el.dataset.en;
+    }
+  });
+
+  localStorage.setItem('lang', lang);
+}
+
+/* ── IMAGE EXTENSION FALLBACK ── */
+function tryExt(img, alts){
+  if(!alts.length){ img.style.display='none'; return; }
+  img.onerror = function(){ tryExt(img, alts.slice(1)); };
+  img.src = alts[0];
+}
+
+/* Default language load */
+const savedLang = localStorage.getItem('lang') || 'hi';
+toggleLang(savedLang);
+</script>
+</body>
+</html>
